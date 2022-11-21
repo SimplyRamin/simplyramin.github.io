@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/SimplyRamin/Personal-Portfolio/issues"
   },
-  "homepage": "https://github.com/SimplyRamin/Personal-Portfolio#readme"
+  "homepage": "https://github.com/SimplyRamin/Personal-Portfolio#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
 }
