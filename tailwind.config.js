@@ -14,7 +14,7 @@ module.exports = {
         'green': '#29b067'
       },
       fontFamily: {
-        'sf': ["'SF Pro Text'"]
+        'ubuntu': ['Ubuntu', 'sans-serif'],
       }
     },
   },
