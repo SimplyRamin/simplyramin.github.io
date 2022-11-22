@@ -10,9 +10,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet"/>
 </head>
-<body>
-    <h1 class="font-ubuntu caret-red-600">hello world</h1>
-    <h1 class="font-mono">hello world in mono</h1>
-    <div class="bg-red-600">test</div>
+<body class="bg-body text-light-low font-ubuntu pb-12">
+    <header class="py-6">
+        <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+            <div class="text-xl font-semibold underline decoration-red-high decoration-4 underline-offset-4">Ramin Ferdos</div>
+            <div class="menu-container text-base underline-offset-4 decoration-2 md:flex hidden space-x-4 items-center">
+                <a href="#" class="hover:text-light-low  text-red-low hover:underline">Home</a>
+                <a href="" class="hover:text-red-low hover:underline ">Projects</a>
+                <a href="" class="hover:text-red-low hover:underline">Experiences</a>
+                <a href="" class="hover:text-red-low hover:underline">Education & Certificates</a>
+                <a href="" class="hover:text-red-low hover:underline">
+                    <button class="bg-red-high text-bright font-semibold px-2 py-1 rounded-lg hover:bg-light-low hover:text-red-high transition duration-600">Contact</button></a>
+            </div>
+            <div class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="32" height="32"
+                viewBox="0,0,256,256"
+                style="fill:#000000;">
+                <g fill="#a6a6a6" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M20,7h-16c-1.1,0 -2,-0.9 -2,-2c0,-1.1 0.9,-2 2,-2h16c1.1,0 2,0.9 2,2c0,1.1 -0.9,2 -2,2z"></path><path d="M20,21h-16c-1.1,0 -2,-0.9 -2,-2c0,-1.1 0.9,-2 2,-2h16c1.1,0 2,0.9 2,2c0,1.1 -0.9,2 -2,2z"></path><path d="M20,14h-16c-1.1,0 -2,-0.9 -2,-2c0,-1.1 0.9,-2 2,-2h16c1.1,0 2,0.9 2,2c0,1.1 -0.9,2 -2,2z" opacity="0.35"></path></g></g>
+                </svg>
+                <!-- make this humburger button clickable and expand a mobile-friendly menu -->
+            </div>
+        </div>
+    </header>
 </body>
 </html>
