@@ -15,23 +15,39 @@
         <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
             <div class="text-xl font-semibold underline decoration-red-high decoration-4 underline-offset-4">Ramin Ferdos</div>
             <div class="menu-container text-base underline-offset-4 decoration-2 md:flex hidden space-x-4 items-center">
-                <a href="#" class="hover:text-light-low  text-red-low hover:underline">Home</a>
-                <a href="" class="hover:text-red-low hover:underline ">Projects</a>
-                <a href="" class="hover:text-red-low hover:underline">Experiences</a>
-                <a href="" class="hover:text-red-low hover:underline">Education & Certificates</a>
-                <a href="" class="hover:text-red-low hover:underline">
+                <a href="#" class="hover:text-light-low  text-red-low hover:underline transition">Home</a>
+                <a href="" class="hover:text-red-low hover:underline transition">Projects</a>
+                <a href="" class="hover:text-red-low hover:underline transition">Experiences</a>
+                <a href="" class="hover:text-red-low hover:underline transition">Education & Certificates</a>
+                <a href="" class="hover:text-red-low hover:underline transition">
                     <button class="bg-red-high text-bright font-semibold px-2 py-1 rounded-lg hover:bg-light-low hover:text-red-high transition duration-600">Contact</button></a>
             </div>
             <div class="md:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                width="32" height="32"
-                viewBox="0,0,256,256"
-                style="fill:#000000;">
-                <g fill="#a6a6a6" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M20,7h-16c-1.1,0 -2,-0.9 -2,-2c0,-1.1 0.9,-2 2,-2h16c1.1,0 2,0.9 2,2c0,1.1 -0.9,2 -2,2z"></path><path d="M20,21h-16c-1.1,0 -2,-0.9 -2,-2c0,-1.1 0.9,-2 2,-2h16c1.1,0 2,0.9 2,2c0,1.1 -0.9,2 -2,2z"></path><path d="M20,14h-16c-1.1,0 -2,-0.9 -2,-2c0,-1.1 0.9,-2 2,-2h16c1.1,0 2,0.9 2,2c0,1.1 -0.9,2 -2,2z" opacity="0.35"></path></g></g>
-                </svg>
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="32" height="32"
+                    viewBox="0,0,256,256"
+                    style="fill:#000000;">
+                    <g fill="#a6a6a6" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M20,7h-16c-1.1,0 -2,-0.9 -2,-2c0,-1.1 0.9,-2 2,-2h16c1.1,0 2,0.9 2,2c0,1.1 -0.9,2 -2,2z"></path><path d="M20,21h-16c-1.1,0 -2,-0.9 -2,-2c0,-1.1 0.9,-2 2,-2h16c1.1,0 2,0.9 2,2c0,1.1 -0.9,2 -2,2z"></path><path d="M20,14h-16c-1.1,0 -2,-0.9 -2,-2c0,-1.1 0.9,-2 2,-2h16c1.1,0 2,0.9 2,2c0,1.1 -0.9,2 -2,2z" opacity="0.35"></path></g></g>
+                    </svg>
+                </button>
                 <!-- make this humburger button clickable and expand a mobile-friendly menu -->
             </div>
         </div>
     </header>
+
+    <div class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+        <div class="flex flex-wrap md:flex-nowrap">
+            <nav class="inline-block lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block">
+                <div class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-37">
+                    <a href="" class="nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body">
+                        <span class="bg-body px-2 py-1 rounded-md ml-10 opacity-0">
+                            Home
+                        </span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
 </body>
 </html>
