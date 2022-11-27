@@ -51,3 +51,6 @@ html, body{
 .nav-dot:hover span {
     opacity: 1;
 }
+.project-title {
+    @apply text-bright text-2xl
+}
