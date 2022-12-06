@@ -30,9 +30,6 @@ html, body{
 .section-paragraph {
     @apply text-light-low my-6 w-full max-w-xl;
 }
-.badge {
-    @apply px-4 py-2 text-sm rounded bg-red-low;
-}
 [id] {
     scroll-margin-top: 100px;
 }
@@ -81,8 +78,10 @@ html, body{
     transition: transform 0.8s;
     transform-style: preserve-3d;
 }
-.project:hover .flip-card-inner {
-    transform: rotateY(180deg);
+@media (min-width: 768px){
+    .project:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
 }
 .front-card, .back-card {
     position: absolute;
@@ -93,4 +92,8 @@ html, body{
 }
 .back-card {
     transform: rotateY(180deg);
+}
+
+.nav {
+    transition-duration: 1s;
 }

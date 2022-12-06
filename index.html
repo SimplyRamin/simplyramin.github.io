@@ -82,13 +82,13 @@
                         <div>
                             <svg width="25" height="31" viewBox="0 0 25 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M10.175 29.2143L2.2167 23.5298C1.39556 22.9433 0.984986 22.65 0.763321 22.2193C0.541656 21.7885 0.541656 21.284 0.541656 20.2749V10.7251C0.541656 10.4038 0.541656 10.1336 0.548815 9.90068L11.5 17.723V30.1063C11.1432 29.9059 10.727 29.6086 10.175 29.2143ZM13.5 30.1063C13.8567 29.9059 14.273 29.6086 14.8249 29.2143L14.8249 29.2143L22.7833 23.5298C23.6044 22.9433 24.015 22.65 24.2367 22.2193C24.4583 21.7885 24.4583 21.284 24.4583 20.2749V10.7251C24.4583 10.4038 24.4583 10.1336 24.4512 9.90068L13.5 17.723V30.1063ZM23.5859 8.06094L12.5 15.9794L1.4141 8.06094C1.62538 7.89258 1.88818 7.70486 2.2167 7.47021L10.175 1.78568C11.2977 0.983768 11.8591 0.582809 12.5 0.582809C13.1409 0.582809 13.7023 0.983767 14.8249 1.78568L22.7833 7.47021C23.1118 7.70486 23.3746 7.89258 23.5859 8.06094Z" fill="#262626"/>
-                                </svg>                                
+                            </svg>                                
                         </div>
                         <span class="">Projects</span>
                     </a>
                 </div>
             </div>
-            <img src="Images/IMG_0931.png" alt="Ramin Ferdos" class="md:scale-[0.6] mt-12 md:absolute md:mt-0 right-0 -z-10">
+            <img src="Images/RaminFerdos.png" alt="Ramin Ferdos" class="md:scale-[0.6] mt-12 md:absolute md:mt-0 right-0 -z-10">
         </div>
     </div>
 
@@ -100,9 +100,8 @@
             </h2>
             <div class="w-32 h-2 bg-red-high rounded-full mt-1 mb-4"></div>
             <p class="section-paragraph">I've had the honor of working on multiple projects, which you can see below from latest to earliest with links to their resources.<br><span class="text-red-low text-sm">Due to confidentiality matters, some of them are not available for public view.</span></p>
-            <!-- need to make the projects section responsive -->
             <div class="bg-dark-high/30 flex flex-col overflow-y-auto md:overflow-x-auto md:flex-row">
-                <div class="project border-dark-low border-4 min-w-[34rem] text-center m-2 rounded-lg min-h-[23rem]">
+                <div class="project border-dark-low border-4 md:min-w-[34rem] text-center m-2 rounded-lg min-h-[23rem] md:min-h-[23rem]">
                     <div class="flip-card-inner">
                         <div class="front-card">
                             <h3 class="project-title p-4">
@@ -123,6 +122,15 @@
                                     In this project, which is a multiple-stage project, I developed a software for optimizing MPT trading strategy in FX trading. The mathematical optimization which is constrained for this project was done with the SciPy package and resulted in more accurate optimization than Excel's GRG non-linear solver. Also, a comprehensive pipeline for this project was designed to be able to use MetaTrader application outputs. Logging and, data tracking mechanism was also developed and, implemented.
                                 </p>
                             </div>
+                            <div class="button-container md:hidden flex mx-5 items-center justify-center">
+                                <div class="px-2 py-1 bg-red-high text-bright font-bold flex items-center space-x-2 rounded-lg hover:bg-light-low hover:text-red-high transition duration-600">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.2371 15.1157C19.0484 14.3833 19.7137 13.6416 20.188 13.0657C20.5762 12.5944 20.7703 12.3588 20.7703 12C20.7703 11.6412 20.5762 11.4056 20.188 10.9343C18.768 9.21014 15.6357 6 12 6C11.1605 6 10.3479 6.17115 9.57695 6.45563L12.1238 9.00251C13.6822 9.06577 14.9342 10.3178 14.9975 11.8762L18.2371 15.1157ZM9.39308 10.5144C9.14295 10.9524 9.00001 11.4595 9.00001 12C9.00001 13.6569 10.3432 15 12 15C12.5405 15 13.0476 14.8571 13.4856 14.6069L15.7872 16.9085C14.636 17.5555 13.3529 18 12 18C8.36428 18 5.23207 14.7899 3.81198 13.0657C3.42382 12.5944 3.22974 12.3588 3.22974 12C3.22974 11.6412 3.42382 11.4056 3.81198 10.9343C4.48541 10.1167 5.54385 8.96489 6.85842 7.97974L9.39308 10.5144Z" fill="#33363F"/>
+                                        <path d="M5 2L21 18" stroke="#33363F" stroke-width="2"/>
+                                    </svg>                
+                                    <span class="">Private</span>
+                                </div>
+                            </div>
                         </div>  
                         <div class="back-card bg-red-high rounded-lg flex items-center justify-center">
                             <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -133,7 +141,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project border-dark-low border-4 min-w-[34rem] text-center m-2 rounded-lg min-h-[23rem]">
+                <div class="project border-dark-low border-4 min-w-[34rem] text-center m-2 rounded-lg min-h-[18.5rem] md:min-h-[23rem]">
                     <div class="flip-card-inner">
                         <div class="front-card">
                             <h3 class="project-title p-4">
@@ -154,13 +162,21 @@
                                     In this project, I try to implement and teach multiple and different GANs architectures and tackle well-known challenges in this area. These contents are mostly tightly knitted to the posts shared on the LinkedIn account and can be reviewed as additional resources for those posts.
                                 </p>
                             </div>
+                            <div class="button-container md:hidden flex mx-5 items-center justify-center">
+                                <a href="https://github.com/SimplyRamin/GANs" target="_blank" rel="noopener noreferrer" class="px-2 py-1 bg-green text-bright font-bold flex items-center space-x-2 rounded-lg hover:bg-light-low hover:text-lime-800 transition duration-600">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.7703 12C20.7703 11.6412 20.5762 11.4056 20.188 10.9343C18.768 9.21014 15.6357 6 12 6C8.36428 6 5.23207 9.21014 3.81198 10.9343C3.42382 11.4056 3.22974 11.6412 3.22974 12C3.22974 12.3588 3.42382 12.5944 3.81198 13.0657C5.23207 14.7899 8.36428 18 12 18C15.6357 18 18.768 14.7899 20.188 13.0657C20.5762 12.5944 20.7703 12.3588 20.7703 12ZM12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3432 9 9.00002 10.3431 9.00002 12C9.00002 13.6569 10.3432 15 12 15Z" fill="#33363F"/>
+                                    </svg>
+                                    <span class="">Public</span>
+                                </a>
+                            </div>
                         </div>
                         <div class="back-card bg-green rounded-lg flex flex-col items-center justify-center">
-                            <a href="https://github.com/SimplyRamin/GANs">
+                            <a href="https://github.com/SimplyRamin/GANs" target="_blank" rel="noopener noreferrer">
                                 <div class="container-title-logo flex flex-row items-center justify-center">
                                     <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M20.7703 12C20.7703 11.6412 20.5762 11.4056 20.188 10.9343C18.7679 9.21014 15.6357 6 12 6C8.36427 6 5.23206 9.21014 3.81197 10.9343C3.42381 11.4056 3.22973 11.6412 3.22973 12C3.22973 12.3588 3.42381 12.5944 3.81197 13.0657C5.23206 14.7899 8.36427 18 12 18C15.6357 18 18.7679 14.7899 20.188 13.0657C20.5762 12.5944 20.7703 12.3588 20.7703 12ZM12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3432 9 9.00001 10.3431 9.00001 12C9.00001 13.6569 10.3432 15 12 15Z" fill="#fefefe"/>
-                                        </svg>
+                                    </svg>
                                     <h4 class="text-bright font-bold text-6xl">Public</h4>
                                 </div>
                                 <div class="container-sub-text">
@@ -170,7 +186,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project border-dark-low border-4 min-w-[34rem] text-center m-2 rounded-lg min-h-[23rem]">
+                <div class="project border-dark-low border-4 min-w-[34rem] text-center m-2 rounded-lg min-h-[26rem] md:min-h-[23rem]">
                     <div class="flip-card-inner">
                         <div class="front-card">
                             <h3 class="project-title p-4">
@@ -191,17 +207,26 @@
                                     In this project, I trained a model for ranking the influencers on Instagram. I asked three experts in digital marketing with many years of experience to score the training dataset of influencers which all are shuffled and de-identified to remove the biases towards them. I created a pipeline based on Instagram's API to extract features to rank influencers, some of these features are not available in Instagram mobile or web application, such as category, etc, and some of these features are calculated based on other features such as frequency of sharing posts, etc. also, a logging mechanism designed for this pipeline so after deployment of this model, a dataset for retraining and discovering far-out influencers.
                                 </p>
                             </div>
+                            <div class="button-container md:hidden flex mx-5 items-center justify-center">
+                                <div class="px-2 py-1 bg-red-high text-bright font-bold flex items-center space-x-2 rounded-lg hover:bg-light-low hover:text-red-high transition duration-600">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.2371 15.1157C19.0484 14.3833 19.7137 13.6416 20.188 13.0657C20.5762 12.5944 20.7703 12.3588 20.7703 12C20.7703 11.6412 20.5762 11.4056 20.188 10.9343C18.768 9.21014 15.6357 6 12 6C11.1605 6 10.3479 6.17115 9.57695 6.45563L12.1238 9.00251C13.6822 9.06577 14.9342 10.3178 14.9975 11.8762L18.2371 15.1157ZM9.39308 10.5144C9.14295 10.9524 9.00001 11.4595 9.00001 12C9.00001 13.6569 10.3432 15 12 15C12.5405 15 13.0476 14.8571 13.4856 14.6069L15.7872 16.9085C14.636 17.5555 13.3529 18 12 18C8.36428 18 5.23207 14.7899 3.81198 13.0657C3.42382 12.5944 3.22974 12.3588 3.22974 12C3.22974 11.6412 3.42382 11.4056 3.81198 10.9343C4.48541 10.1167 5.54385 8.96489 6.85842 7.97974L9.39308 10.5144Z" fill="#33363F"/>
+                                        <path d="M5 2L21 18" stroke="#33363F" stroke-width="2"/>
+                                    </svg>                
+                                    <span class="">Private</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="back-card bg-red-high rounded-lg flex items-center justify-center">
                             <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.2371 15.1157C19.0484 14.3833 19.7137 13.6416 20.188 13.0657C20.5762 12.5944 20.7703 12.3588 20.7703 12C20.7703 11.6412 20.5762 11.4056 20.188 10.9343C18.768 9.21014 15.6357 6 12 6C11.1605 6 10.3479 6.17115 9.57695 6.45563L12.1238 9.00251C13.6822 9.06577 14.9342 10.3178 14.9975 11.8762L18.2371 15.1157ZM9.39308 10.5144C9.14295 10.9524 9.00001 11.4595 9.00001 12C9.00001 13.6569 10.3432 15 12 15C12.5405 15 13.0476 14.8571 13.4856 14.6069L15.7872 16.9085C14.636 17.5555 13.3529 18 12 18C8.36428 18 5.23207 14.7899 3.81198 13.0657C3.42382 12.5944 3.22974 12.3588 3.22974 12C3.22974 11.6412 3.42382 11.4056 3.81198 10.9343C4.48541 10.1167 5.54385 8.96489 6.85842 7.97974L9.39308 10.5144Z" fill="#fefefe"/>
-                            <path d="M5 2L21 18" stroke="#fefefe" stroke-width="2"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.2371 15.1157C19.0484 14.3833 19.7137 13.6416 20.188 13.0657C20.5762 12.5944 20.7703 12.3588 20.7703 12C20.7703 11.6412 20.5762 11.4056 20.188 10.9343C18.768 9.21014 15.6357 6 12 6C11.1605 6 10.3479 6.17115 9.57695 6.45563L12.1238 9.00251C13.6822 9.06577 14.9342 10.3178 14.9975 11.8762L18.2371 15.1157ZM9.39308 10.5144C9.14295 10.9524 9.00001 11.4595 9.00001 12C9.00001 13.6569 10.3432 15 12 15C12.5405 15 13.0476 14.8571 13.4856 14.6069L15.7872 16.9085C14.636 17.5555 13.3529 18 12 18C8.36428 18 5.23207 14.7899 3.81198 13.0657C3.42382 12.5944 3.22974 12.3588 3.22974 12C3.22974 11.6412 3.42382 11.4056 3.81198 10.9343C4.48541 10.1167 5.54385 8.96489 6.85842 7.97974L9.39308 10.5144Z" fill="#fefefe"/>
+                                <path d="M5 2L21 18" stroke="#fefefe" stroke-width="2"/>
                             </svg>
                             <h4 class="text-bright font-bold text-6xl">Private</h4>
                         </div>
                     </div>
                 </div>
-                <div class="project border-dark-low border-4 min-w-[34rem] text-center m-2 rounded-lg min-h-[23rem]">
+                <div class="project border-dark-low border-4 min-w-[34rem] text-center m-2 rounded-lg min-h-[22rem] md:min-h-[23rem]">
                     <div class="flip-card-inner">
                         <div class="front-card">
                             <h3 class="project-title p-4">
@@ -222,17 +247,26 @@
                                     In this project, I analyzed the pullup campaign with a data science approach. this campaign was held for Zarrin Roya company and operated on Instagram. In this project, I analyzed the data of the campaign, extracted strategic insights which shaped the future marketing plans of the aforementioned company, and trained multiple models for predicting the price of advertising media, influencer, and their situation of profit. Two learning approaches and three approaches and multiple machine learning algorithms were implemented.
                                 </p>
                             </div>
+                            <div class="button-container md:hidden flex mx-5 items-center justify-center">
+                                <div class="px-2 py-1 bg-red-high text-bright font-bold flex items-center space-x-2 rounded-lg hover:bg-light-low hover:text-red-high transition duration-600">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.2371 15.1157C19.0484 14.3833 19.7137 13.6416 20.188 13.0657C20.5762 12.5944 20.7703 12.3588 20.7703 12C20.7703 11.6412 20.5762 11.4056 20.188 10.9343C18.768 9.21014 15.6357 6 12 6C11.1605 6 10.3479 6.17115 9.57695 6.45563L12.1238 9.00251C13.6822 9.06577 14.9342 10.3178 14.9975 11.8762L18.2371 15.1157ZM9.39308 10.5144C9.14295 10.9524 9.00001 11.4595 9.00001 12C9.00001 13.6569 10.3432 15 12 15C12.5405 15 13.0476 14.8571 13.4856 14.6069L15.7872 16.9085C14.636 17.5555 13.3529 18 12 18C8.36428 18 5.23207 14.7899 3.81198 13.0657C3.42382 12.5944 3.22974 12.3588 3.22974 12C3.22974 11.6412 3.42382 11.4056 3.81198 10.9343C4.48541 10.1167 5.54385 8.96489 6.85842 7.97974L9.39308 10.5144Z" fill="#33363F"/>
+                                        <path d="M5 2L21 18" stroke="#33363F" stroke-width="2"/>
+                                    </svg>                
+                                    <span class="">Private</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="back-card bg-red-high rounded-lg flex items-center justify-center">
                             <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.2371 15.1157C19.0484 14.3833 19.7137 13.6416 20.188 13.0657C20.5762 12.5944 20.7703 12.3588 20.7703 12C20.7703 11.6412 20.5762 11.4056 20.188 10.9343C18.768 9.21014 15.6357 6 12 6C11.1605 6 10.3479 6.17115 9.57695 6.45563L12.1238 9.00251C13.6822 9.06577 14.9342 10.3178 14.9975 11.8762L18.2371 15.1157ZM9.39308 10.5144C9.14295 10.9524 9.00001 11.4595 9.00001 12C9.00001 13.6569 10.3432 15 12 15C12.5405 15 13.0476 14.8571 13.4856 14.6069L15.7872 16.9085C14.636 17.5555 13.3529 18 12 18C8.36428 18 5.23207 14.7899 3.81198 13.0657C3.42382 12.5944 3.22974 12.3588 3.22974 12C3.22974 11.6412 3.42382 11.4056 3.81198 10.9343C4.48541 10.1167 5.54385 8.96489 6.85842 7.97974L9.39308 10.5144Z" fill="#fefefe"/>
-                            <path d="M5 2L21 18" stroke="#fefefe" stroke-width="2"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.2371 15.1157C19.0484 14.3833 19.7137 13.6416 20.188 13.0657C20.5762 12.5944 20.7703 12.3588 20.7703 12C20.7703 11.6412 20.5762 11.4056 20.188 10.9343C18.768 9.21014 15.6357 6 12 6C11.1605 6 10.3479 6.17115 9.57695 6.45563L12.1238 9.00251C13.6822 9.06577 14.9342 10.3178 14.9975 11.8762L18.2371 15.1157ZM9.39308 10.5144C9.14295 10.9524 9.00001 11.4595 9.00001 12C9.00001 13.6569 10.3432 15 12 15C12.5405 15 13.0476 14.8571 13.4856 14.6069L15.7872 16.9085C14.636 17.5555 13.3529 18 12 18C8.36428 18 5.23207 14.7899 3.81198 13.0657C3.42382 12.5944 3.22974 12.3588 3.22974 12C3.22974 11.6412 3.42382 11.4056 3.81198 10.9343C4.48541 10.1167 5.54385 8.96489 6.85842 7.97974L9.39308 10.5144Z" fill="#fefefe"/>
+                                <path d="M5 2L21 18" stroke="#fefefe" stroke-width="2"/>
                             </svg>
                             <h4 class="text-bright font-bold text-6xl">Private</h4>
                         </div>
                     </div>
                 </div>
-                <div class="project border-dark-low border-4 min-w-[37rem] text-center m-2 rounded-lg min-h-[23rem]">
+                <div class="project border-dark-low border-4 md:min-w-[37rem] text-center m-2 rounded-lg min-h-[24.5rem] md:min-h-[23rem]">
                     <div class="flip-card-inner">
                         <div class="front-card">
                             <h3 class="project-title p-4 text-xl">
@@ -253,13 +287,21 @@
                                     In this project, I analyzed the #Bekhatereman campaign (a CSR Campaign for the Official Distributor of Mitsubishi Motors in Iran) data with the Data Science approach. The goal of this project was to assess the effectiveness of this campaign which was held on Instagram based on advertising cost and sentiment analysis. In this project, I have used the CRISP-DM methodology. Every aspect of this project was implemented from scratch by me the most important section is data gathering which I designed and developed an Instagram bot to retrieve the data necessary for this endeavor. In this project, I have trained more than 250 models with different algorithms and hyperparameters.
                                 </p>
                             </div>
+                            <div class="button-container md:hidden flex mx-5 items-center justify-center">
+                                <a href="https://github.com/SimplyRamin/bekhatereman_campaign_analysis" target="_blank" rel="noopener noreferrer" class="px-2 py-1 bg-green text-bright font-bold flex items-center space-x-2 rounded-lg hover:bg-light-low hover:text-lime-800 transition duration-600">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.7703 12C20.7703 11.6412 20.5762 11.4056 20.188 10.9343C18.768 9.21014 15.6357 6 12 6C8.36428 6 5.23207 9.21014 3.81198 10.9343C3.42382 11.4056 3.22974 11.6412 3.22974 12C3.22974 12.3588 3.42382 12.5944 3.81198 13.0657C5.23207 14.7899 8.36428 18 12 18C15.6357 18 18.768 14.7899 20.188 13.0657C20.5762 12.5944 20.7703 12.3588 20.7703 12ZM12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3432 9 9.00002 10.3431 9.00002 12C9.00002 13.6569 10.3432 15 12 15Z" fill="#33363F"/>
+                                    </svg>
+                                    <span class="">Public</span>
+                                </a>
+                            </div>
                         </div>
                         <div class="back-card bg-green rounded-lg flex flex-col items-center justify-center">
-                            <a href="https://github.com/SimplyRamin/bekhatereman_campaign_analysis">
+                            <a href="https://github.com/SimplyRamin/bekhatereman_campaign_analysis" target="_blank" rel="noopener noreferrer">
                                 <div class="container-title-logo flex flex-row items-center justify-center">
                                     <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M20.7703 12C20.7703 11.6412 20.5762 11.4056 20.188 10.9343C18.7679 9.21014 15.6357 6 12 6C8.36427 6 5.23206 9.21014 3.81197 10.9343C3.42381 11.4056 3.22973 11.6412 3.22973 12C3.22973 12.3588 3.42381 12.5944 3.81197 13.0657C5.23206 14.7899 8.36427 18 12 18C15.6357 18 18.7679 14.7899 20.188 13.0657C20.5762 12.5944 20.7703 12.3588 20.7703 12ZM12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3432 9 9.00001 10.3431 9.00001 12C9.00001 13.6569 10.3432 15 12 15Z" fill="#fefefe"/>
-                                        </svg>
+                                    </svg>
                                     <h4 class="text-bright font-bold text-6xl">Public</h4>
                                 </div>
                                 <div class="container-sub-text">
@@ -269,7 +311,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project border-dark-low border-4 min-w-[34rem] text-center m-2 rounded-lg min-h-[23rem]">
+                <div class="project border-dark-low border-4 min-w-[34rem] text-center m-2 rounded-lg min-h-[18rem] md:min-h-[23rem]">
                     <div class="flip-card-inner">
                         <div class="front-card">
                             <h3 class="project-title p-4">
@@ -290,13 +332,21 @@
                                     In this repository, I have implemented the test-driven design pattern for a simple problem within Python. also, a basic test for GitHub workflow to achieve CI is implemented. This project is inspired by the "Learning Test-Driven Development" book by Saleem Siddiqui, all credits are due to this book.
                                 </p>
                             </div>
+                            <div class="button-container md:hidden flex mx-5 items-center justify-center">
+                                <a href="https://github.com/SimplyRamin/TDD_Playground" target="_blank" rel="noopener noreferrer" class="px-2 py-1 bg-green text-bright font-bold flex items-center space-x-2 rounded-lg hover:bg-light-low hover:text-lime-800 transition duration-600">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.7703 12C20.7703 11.6412 20.5762 11.4056 20.188 10.9343C18.768 9.21014 15.6357 6 12 6C8.36428 6 5.23207 9.21014 3.81198 10.9343C3.42382 11.4056 3.22974 11.6412 3.22974 12C3.22974 12.3588 3.42382 12.5944 3.81198 13.0657C5.23207 14.7899 8.36428 18 12 18C15.6357 18 18.768 14.7899 20.188 13.0657C20.5762 12.5944 20.7703 12.3588 20.7703 12ZM12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3432 9 9.00002 10.3431 9.00002 12C9.00002 13.6569 10.3432 15 12 15Z" fill="#33363F"/>
+                                    </svg>
+                                    <span class="">Public</span>
+                                </a>
+                            </div>
                         </div>
                         <div class="back-card bg-green rounded-lg flex flex-col items-center justify-center">
-                            <a href="https://github.com/SimplyRamin/TDD_Playground">
+                            <a href="https://github.com/SimplyRamin/TDD_Playground" target="_blank" rel="noopener noreferrer">
                                 <div class="container-title-logo flex flex-row items-center justify-center">
                                     <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M20.7703 12C20.7703 11.6412 20.5762 11.4056 20.188 10.9343C18.7679 9.21014 15.6357 6 12 6C8.36427 6 5.23206 9.21014 3.81197 10.9343C3.42381 11.4056 3.22973 11.6412 3.22973 12C3.22973 12.3588 3.42381 12.5944 3.81197 13.0657C5.23206 14.7899 8.36427 18 12 18C15.6357 18 18.7679 14.7899 20.188 13.0657C20.5762 12.5944 20.7703 12.3588 20.7703 12ZM12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3432 9 9.00001 10.3431 9.00001 12C9.00001 13.6569 10.3432 15 12 15Z" fill="#fefefe"/>
-                                        </svg>
+                                    </svg>
                                     <h4 class="text-bright font-bold text-6xl">Public</h4>
                                 </div>
                                 <div class="container-sub-text">
@@ -306,7 +356,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project border-dark-low border-4 min-w-[34rem] text-center m-2 rounded-lg min-h-[23rem]">
+                <div class="project border-dark-low border-4 min-w-[34rem] text-center m-2 rounded-lg min-h-[18rem] md:min-h-[23rem]">
                     <div class="flip-card-inner">
                         <div class="front-card">
                             <h3 class="project-title p-4">
@@ -327,13 +377,21 @@
                                     I implemented multiple and famous architectures of neural networks with the PyTorch library. Almost all of the mentioned neural network architectures in skills are implemented in this project. It's worth mentioning that multiple datasets such as MNIST, CIFAR, etc. are used in this project.
                                 </p>
                             </div>
+                            <div class="button-container md:hidden flex mx-5 items-center justify-center">
+                                <a href="https://github.com/SimplyRamin/PyTorch-Guides" target="_blank" rel="noopener noreferrer" class="px-2 py-1 bg-green text-bright font-bold flex items-center space-x-2 rounded-lg hover:bg-light-low hover:text-lime-800 transition duration-600">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.7703 12C20.7703 11.6412 20.5762 11.4056 20.188 10.9343C18.768 9.21014 15.6357 6 12 6C8.36428 6 5.23207 9.21014 3.81198 10.9343C3.42382 11.4056 3.22974 11.6412 3.22974 12C3.22974 12.3588 3.42382 12.5944 3.81198 13.0657C5.23207 14.7899 8.36428 18 12 18C15.6357 18 18.768 14.7899 20.188 13.0657C20.5762 12.5944 20.7703 12.3588 20.7703 12ZM12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3432 9 9.00002 10.3431 9.00002 12C9.00002 13.6569 10.3432 15 12 15Z" fill="#33363F"/>
+                                    </svg>
+                                    <span class="">Public</span>
+                                </a>
+                            </div>
                         </div>
                         <div class="back-card bg-green rounded-lg flex flex-col items-center justify-center">
-                            <a href="https://github.com/SimplyRamin/PyTorch-Guides">
+                            <a href="https://github.com/SimplyRamin/PyTorch-Guides" target="_blank" rel="noopener noreferrer">
                                 <div class="container-title-logo flex flex-row items-center justify-center">
                                     <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M20.7703 12C20.7703 11.6412 20.5762 11.4056 20.188 10.9343C18.7679 9.21014 15.6357 6 12 6C8.36427 6 5.23206 9.21014 3.81197 10.9343C3.42381 11.4056 3.22973 11.6412 3.22973 12C3.22973 12.3588 3.42381 12.5944 3.81197 13.0657C5.23206 14.7899 8.36427 18 12 18C15.6357 18 18.7679 14.7899 20.188 13.0657C20.5762 12.5944 20.7703 12.3588 20.7703 12ZM12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3432 9 9.00001 10.3431 9.00001 12C9.00001 13.6569 10.3432 15 12 15Z" fill="#fefefe"/>
-                                        </svg>
+                                    </svg>
                                     <h4 class="text-bright font-bold text-6xl">Public</h4>
                                 </div>
                                 <div class="container-sub-text">
@@ -343,7 +401,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project border-dark-low border-4 min-w-[34rem] text-center m-2 rounded-lg min-h-[23rem]">
+                <div class="project border-dark-low border-4 min-w-[34rem] text-center m-2 rounded-lg min-h-[16rem] md:min-h-[23rem]">
                     <div class="flip-card-inner">
                         <div class="front-card">
                             <h3 class="project-title p-4">
@@ -364,13 +422,21 @@
                                     I implemented an artificial neural network from scratch with 4 different models, for instances in which I used a deep learning library, I used PyTorch.
                                 </p>
                             </div>
+                            <div class="button-container md:hidden flex mx-5 items-center justify-center">
+                                <a href="https://github.com/SimplyRamin/Neural-Net-From-Scratch-to-Implementation-with-PyTorch" target="_blank" rel="noopener noreferrer" class="px-2 py-1 bg-green text-bright font-bold flex items-center space-x-2 rounded-lg hover:bg-light-low hover:text-lime-800 transition duration-600">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.7703 12C20.7703 11.6412 20.5762 11.4056 20.188 10.9343C18.768 9.21014 15.6357 6 12 6C8.36428 6 5.23207 9.21014 3.81198 10.9343C3.42382 11.4056 3.22974 11.6412 3.22974 12C3.22974 12.3588 3.42382 12.5944 3.81198 13.0657C5.23207 14.7899 8.36428 18 12 18C15.6357 18 18.768 14.7899 20.188 13.0657C20.5762 12.5944 20.7703 12.3588 20.7703 12ZM12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3432 9 9.00002 10.3431 9.00002 12C9.00002 13.6569 10.3432 15 12 15Z" fill="#33363F"/>
+                                    </svg>
+                                    <span class="">Public</span>
+                                </a>
+                            </div>
                         </div>
                         <div class="back-card bg-green rounded-lg flex flex-col items-center justify-center">
-                            <a href="https://github.com/SimplyRamin/Neural-Net-From-Scratch-to-Implementation-with-PyTorch">
+                            <a href="https://github.com/SimplyRamin/Neural-Net-From-Scratch-to-Implementation-with-PyTorch" target="_blank" rel="noopener noreferrer">
                                 <div class="container-title-logo flex flex-row items-center justify-center">
                                     <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M20.7703 12C20.7703 11.6412 20.5762 11.4056 20.188 10.9343C18.7679 9.21014 15.6357 6 12 6C8.36427 6 5.23206 9.21014 3.81197 10.9343C3.42381 11.4056 3.22973 11.6412 3.22973 12C3.22973 12.3588 3.42381 12.5944 3.81197 13.0657C5.23206 14.7899 8.36427 18 12 18C15.6357 18 18.7679 14.7899 20.188 13.0657C20.5762 12.5944 20.7703 12.3588 20.7703 12ZM12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3432 9 9.00001 10.3431 9.00001 12C9.00001 13.6569 10.3432 15 12 15Z" fill="#fefefe"/>
-                                        </svg>
+                                    </svg>
                                     <h4 class="text-bright font-bold text-6xl">Public</h4>
                                 </div>
                                 <div class="container-sub-text">
@@ -750,7 +816,11 @@
                     </div>
                     <div class="rounded-full h-auto min-w-[0.125rem] bg-light-high"></div>
                     <div class="certification-info-container">
-                        <div class="certification-title text-bright text-center text-2xl font-bold">Practical Data Science</div>
+                        <div class="certification-title text-bright text-center text-2xl font-bold">
+                            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/A2C6R33SAE2G" target="_blank" rel="noopener noreferrer" class="hover:text-red-low hover:underline transition">
+                                Practical Data Science
+                            </a>
+                        </div>
                         <div class="certification-affiliation text-center mb-2 text-2xl">@ Amazon Web Services</div>
                         <div class="divider w-auto h-1 bg-red-low rounded-full mb-1"></div>
                         <div class="date-container flex flex-row justify-center text-bright p-2">
@@ -760,9 +830,21 @@
                         </div>
                         <div class="certification-description text-justify text-sm">
                             <ul class="list-disc">
-                                <li>Analyze Datasets and Train ML Models Using AutoML</li>
-                                <li>Build, Train, and Deploy ML Pipelines Using BERT</li>
-                                <li>Optimize ML Models and Deploy Human-in-the-Loop Pipelines</li>
+                                <li>
+                                    <a href="https://www.coursera.org/account/accomplishments/certificate/Q62NTVW5N4D4" target="_blank" rel="noopener noreferrer" class="hover:text-red-low hover:underline transition">
+                                        Analyze Datasets and Train ML Models Using AutoML
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.coursera.org/account/accomplishments/certificate/ZV8SWZDZTPUU" target="_blank" rel="noopener noreferrer" class="hover:text-red-low hover:underline transition">
+                                        Build, Train, and Deploy ML Pipelines Using BERT
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.coursera.org/account/accomplishments/certificate/86MAZJ4KEZVZ" target="_blank" rel="noopener noreferrer" class="hover:text-red-low hover:underline transition">
+                                        Optimize ML Models and Deploy Human-in-the-Loop Pipelines
+                                    </a>
+                                </li>
                             </ul>    
                         </div>
                     </div>
@@ -781,7 +863,11 @@
                     </div>
                     <div class="rounded-full h-auto min-w-[0.125rem] bg-light-high"></div>
                     <div class="certification-info-container">
-                        <div class="certification-title text-bright text-center text-2xl font-bold">Generative Adversarial Networks (GANs)</div>
+                        <div class="certification-title text-bright text-center text-2xl font-bold">
+                            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/PRNQBBYGRQA6" target="_blank" rel="noopener noreferrer" class="hover:text-red-low hover:underline transition">
+                                Generative Adversarial Networks (GANs)
+                            </a>
+                        </div>
                         <div class="certification-affiliation text-center mb-2 text-2xl">@ Deeplearning.ai</div>
                         <div class="divider w-auto h-1 bg-red-low rounded-full mb-1"></div>
                         <div class="date-container flex flex-row justify-center text-bright p-2">
@@ -791,9 +877,21 @@
                         </div>
                         <div class="certification-description text-justify text-sm">
                             <ul class="list-disc">
-                                <li>Build Basic Generative Adversarial Networks (GANs)</li>
-                                <li>Build Better Generative Adversarial Networks (GANs)</li>
-                                <li>Apply Generative Adversarial Networks (GANs)</li>
+                                <li>
+                                    <a href="https://www.coursera.org/account/accomplishments/certificate/UYQ497KUSXNL" target="_blank" rel="noopener noreferrer" class="hover:text-red-low hover:underline transition">
+                                        Build Basic Generative Adversarial Networks (GANs)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.coursera.org/account/accomplishments/certificate/EAMCV222A23V" target="_blank" rel="noopener noreferrer" class="hover:text-red-low hover:underline transition">
+                                        Build Better Generative Adversarial Networks (GANs)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.coursera.org/account/accomplishments/certificate/5B9MYF8DF9HV" target="_blank" rel="noopener noreferrer" class="hover:text-red-low hover:underline transition">
+                                        Apply Generative Adversarial Networks (GANs)
+                                    </a>
+                                </li>
                             </ul>    
                         </div>
                     </div>
@@ -812,7 +910,11 @@
                     </div>
                     <div class="rounded-full h-auto min-w-[0.125rem] bg-light-high"></div>
                     <div class="certification-info-container">
-                        <div class="certification-title text-bright text-center text-2xl font-bold">Deeplearning Specialization</div>
+                        <div class="certification-title text-bright text-center text-2xl font-bold">
+                            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/U45K7BWG7PSA" target="_blank" rel="noopener noreferrer" class="hover:text-red-low hover:underline transition">
+                                Deeplearning Specialization
+                            </a>
+                        </div>
                         <div class="certification-affiliation text-center mb-2 text-2xl">@ Deeplearning.ai</div>
                         <div class="divider w-auto h-1 bg-red-low rounded-full mb-1"></div>
                         <div class="date-container flex flex-row justify-center text-bright p-2">
@@ -822,11 +924,31 @@
                         </div>
                         <div class="certification-description text-justify text-sm">
                             <ul class="list-disc">
-                                <li>Neural Networks and Deep Learning</li>
-                                <li>Imporving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization</li>
-                                <li>Structuring Machine Learning Projects</li>
-                                <li>Convolutional Neural Networks</li>
-                                <li>Sequence Models</li>
+                                <li>
+                                    <a href="https://www.coursera.org/account/accomplishments/certificate/6XPXJHGJ2DVU" target="_blank" rel="noopener noreferrer" class="hover:text-red-low hover:underline transition">
+                                        Neural Networks and Deep Learning
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.coursera.org/account/accomplishments/certificate/425HDSPQKL55" target="_blank" rel="noopener noreferrer" class="hover:text-red-low hover:underline transition">
+                                        Imporving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.coursera.org/account/accomplishments/certificate/24G5PVC2WBVS" target="_blank" rel="noopener noreferrer" class="hover:text-red-low hover:underline transition">
+                                        Structuring Machine Learning Projects
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.coursera.org/account/accomplishments/certificate/FBGAW76H25VL" target="_blank" rel="noopener noreferrer" class="hover:text-red-low hover:underline transition">
+                                        Convolutional Neural Networks
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.coursera.org/account/accomplishments/certificate/HEAYFF4MG637" target="_blank" rel="noopener noreferrer" class="hover:text-red-low hover:underline transition">
+                                        Sequence Models
+                                    </a>
+                                </li>
                             </ul>    
                         </div>
                     </div>
@@ -837,12 +959,16 @@
                         <div class="logo">
                             <svg width="158" height="158" viewBox="0 0 158 158" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 47.3999V51.7251H30.7606V47.3999H0ZM35.1056 47.3999V51.7251H78.9309C78.9309 51.7251 74.4526 47.3999 68.5276 47.3999H35.1056ZM87.532 47.3999V51.7251H114.046L112.466 47.3999H87.532ZM133.056 47.3999L131.476 51.7251H157.743V47.3999H133.056ZM0 55.8085V60.1337H30.7606V55.8085H0ZM35.1056 55.8134V60.1337H84.0165C84.0165 60.1337 83.4437 56.8058 82.4513 55.8134H35.1056ZM87.532 55.8134V60.1337H116.959L115.503 55.8134H87.532ZM129.911 55.8134L128.454 60.1337H157.758V55.8134H129.911ZM8.8875 64.217V68.5472H22.2039V64.217H8.8875ZM43.9931 64.217V68.5472H57.275V64.217H43.9931ZM70.2606 64.217V68.5472H83.582C83.582 68.5472 84.4214 66.2611 84.4214 64.217H70.2606ZM96.4096 64.217V68.5472H119.981L118.401 64.217H96.4096ZM127.047 64.217L125.467 68.5472H149.113V64.217H127.047ZM8.8875 72.6305V76.9558H22.2039V72.6305H8.8875ZM43.9931 72.6305V76.9558H78.0619C78.0619 76.9558 80.9059 74.7339 81.8144 72.6305H43.9931ZM96.4195 72.6305V76.9558H109.736V74.5562L110.575 76.9607H134.967L135.875 74.5562V76.9607H149.113V72.6355H124.109L122.776 76.2991L121.443 72.6355L96.4195 72.6305ZM8.8875 81.044V85.3693H22.2039V81.044H8.8875ZM43.9931 81.044V85.3693H81.765C80.8565 83.2708 78.0125 81.044 78.0125 81.044H43.9931ZM96.4195 81.044V85.3693H109.736V81.044H96.4195ZM112.16 81.044L113.77 85.3693H132.063L133.545 81.044H112.16ZM135.89 81.044V85.3693H149.113V81.044H135.89ZM8.8875 89.4526V93.7778H22.2039V89.4526H8.8875ZM43.9931 89.4526V93.7778H57.275V89.4526H43.9931ZM70.2606 89.4526V93.7778H84.4313C84.4313 91.7387 83.5919 89.4526 83.5919 89.4526H70.2606ZM96.4096 89.4526V93.7778H109.726V89.4526H96.4096ZM115.172 89.4526L116.732 93.7778H128.997L130.577 89.4526H115.172ZM135.88 89.4526V93.7778H149.113V89.4526H135.88ZM0.246875 97.8611V102.191H31.0075V97.8611H0.246875ZM35.1204 97.8611V102.191H82.4711C83.4684 101.204 84.0363 97.8611 84.0363 97.8611H35.1204ZM87.7838 97.8611V102.191H109.706V97.8611H87.7838ZM118.174 97.8611L119.779 102.191H126.02L127.526 97.8611H118.174ZM135.85 97.8611V102.191H158V97.8611H135.85ZM0.246875 106.275V110.6H31.0075V106.275H0.246875ZM35.1204 106.275V110.595H68.5473C74.4723 110.595 78.9556 106.275 78.9556 106.275H35.1204ZM87.7838 106.275V110.6H109.706V106.275H87.7838ZM121.211 106.275L122.756 110.585L123.023 110.59L124.593 106.27L121.211 106.275ZM135.845 106.275V110.6H158V106.275H135.845Z" fill="#1F70C1"/>
-                                </svg>                                        
+                            </svg>                                        
                         </div>
                     </div>
                     <div class="rounded-full h-auto min-w-[0.125rem] bg-light-high"></div>
                     <div class="certification-info-container">
-                        <div class="certification-title text-bright text-center text-2xl font-bold">Data Science Professional Certificate</div>
+                        <div class="certification-title text-bright text-center text-2xl font-bold">
+                            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/JZK5RJXGWDVB" target="_blank" rel="noopener noreferrer" class="hover:text-red-low hover:underline transition">
+                                Data Science Professional Certificate
+                            </a>
+                        </div>
                         <div class="certification-affiliation text-center mb-2 text-2xl">@ IBM</div>
                         <div class="divider w-auto h-1 bg-red-low rounded-full mb-1"></div>
                         <div class="date-container flex flex-row justify-center text-bright p-2">
@@ -853,40 +979,76 @@
                         <div class="certification-description text-justify text-sm">
                             <ul class="list-disc flex flex-col space-y-1">
                                 <li class="flex">
-                                    <span class="flex-1">What is Data Science?</span>
-                                    <a href="" class="flex flex-1 justify-center items-center bg-red-high text-bright rounded-md max-w-[3rem] p-[0.125rem]">Badge</a href="">
+                                    <a href="https://www.coursera.org/account/accomplishments/certificate/KGZ7T49WXRT5" target="_blank" rel="noopener noreferrer" class="flex-1 hover:text-red-low hover:underline transition">
+                                        What is Data Science?
+                                    </a>
+                                    <a href="https://www.youracclaim.com/badges/1043c603-2eca-4924-a0d3-f33d9ad6a57f/linked_in_profile" target="_blank" rel="noopener noreferrer" class="flex flex-1 justify-center items-center bg-red-high text-bright rounded-md max-w-[3rem] p-[0.125rem] hover:bg-light-low hover:text-red-high transition duration-600">
+                                        Badge
+                                    </a>
                                 </li>
                                 <li class="flex">
-                                    <span class="flex-1">Tools for Data Science</span>
-                                    <a href="" class="flex flex-1 justify-center items-center bg-red-high text-bright rounded-md max-w-[3rem] p-[0.125rem]">Badge</a>
+                                    <a href="https://www.coursera.org/account/accomplishments/certificate/8AAMWPPWLE2D" target="_blank" rel="noopener noreferrer" class="flex-1 hover:text-red-low hover:underline transition">
+                                        Open Source Tools for Data Science
+                                    </a>
+                                    <a href="https://www.youracclaim.com/badges/e6153e1c-a1ac-4e91-8114-be443f46fac5/linked_in_profile" target="_blank" rel="noopener noreferrer" class="flex flex-1 justify-center items-center bg-red-high text-bright rounded-md max-w-[3rem] p-[0.125rem] hover:bg-light-low hover:text-red-high transition duration-600">
+                                        Badge
+                                    </a>
                                 </li>
                                 <li class="flex">
-                                    <span class="flex-1">Data Science Methodology</span>
-                                    <a href="" class="flex flex-1 justify-center items-center bg-red-high text-bright rounded-md max-w-[3rem] p-[0.125rem]">Badge</a>
+                                    <a href="https://www.coursera.org/account/accomplishments/certificate/9YVW348MF3DB" target="_blank" rel="noopener noreferrer" class="flex-1 hover:text-red-low hover:underline transition">
+                                        Data Science Methodology
+                                    </a>
+                                    <a href="https://www.youracclaim.com/badges/de8db396-04b3-42b3-aa52-68ca10d73697/linked_in_profile" target="_blank" rel="noopener noreferrer" class="flex flex-1 justify-center items-center bg-red-high text-bright rounded-md max-w-[3rem] p-[0.125rem] hover:bg-light-low hover:text-red-high transition duration-600">
+                                        Badge
+                                    </a>
                                 </li>
                                 <li class="flex">
-                                    <span class="flex-1">Python for Data Science and AI</span>
-                                    <a href="" class="flex flex-1 justify-center items-center bg-red-high text-bright rounded-md max-w-[3rem] p-[0.125rem]">Badge</a>
+                                    <a href="https://www.coursera.org/account/accomplishments/certificate/HSDVCXFDXT4N" target="_blank" rel="noopener noreferrer" class="flex-1 hover:text-red-low hover:underline transition">
+                                        Python for Data Science and AI
+                                    </a>
+                                    <a href="https://www.youracclaim.com/badges/0efe9446-084e-4593-a32f-fd9f337d0df8/linked_in_profile" target="_blank" rel="noopener noreferrer" class="flex flex-1 justify-center items-center bg-red-high text-bright rounded-md max-w-[3rem] p-[0.125rem] hover:bg-light-low hover:text-red-high transition duration-600">
+                                        Badge
+                                    </a>
                                 </li>
                                 <li class="flex">
-                                    <span class="flex-1">Database and SQL for Data Science</span>
-                                    <a href="" class="flex flex-1 justify-center items-center bg-red-high text-bright rounded-md max-w-[3rem] p-[0.125rem]">Badge</a>
+                                    <a href="https://www.coursera.org/account/accomplishments/certificate/NFYGWKSS4YW3" target="_blank" rel="noopener noreferrer" class="flex-1 hover:text-red-low hover:underline transition">
+                                        Database and SQL for Data Science
+                                    </a>
+                                    <a href="https://www.youracclaim.com/badges/1fa29b29-9ddb-4283-952c-d94d501a7e97/linked_in_profile" target="_blank" rel="noopener noreferrer" class="flex flex-1 justify-center items-center bg-red-high text-bright rounded-md max-w-[3rem] p-[0.125rem] hover:bg-light-low hover:text-red-high transition duration-600">
+                                        Badge
+                                    </a>
                                 </li>
                                 <li class="flex">
-                                    <span class="flex-1">Data Analysis with Python</span>
-                                    <a href="" class="flex flex-1 justify-center items-center bg-red-high text-bright rounded-md max-w-[3rem] p-[0.125rem]">Badge</a>
+                                    <a href="https://www.coursera.org/account/accomplishments/certificate/5SEGET9MJ2DD" target="_blank" rel="noopener noreferrer" class="flex-1 hover:text-red-low hover:underline transition">
+                                        Data Analysis with Python
+                                    </a>
+                                    <a href="https://www.youracclaim.com/badges/9c1a62cd-a79e-46ff-ae68-f566922afd3b?source=linked_in_profile" target="_blank" rel="noopener noreferrer" class="flex flex-1 justify-center items-center bg-red-high text-bright rounded-md max-w-[3rem] p-[0.125rem] hover:bg-light-low hover:text-red-high transition duration-600">
+                                        Badge
+                                    </a>
                                 </li>
                                 <li class="flex">
-                                    <span class="flex-1">Data Visualization with Python</span>
-                                    <a href="" class="flex flex-1 justify-center items-center bg-red-high text-bright rounded-md max-w-[3rem] p-[0.125rem]">Badge</a>
+                                    <a href="https://www.coursera.org/account/accomplishments/certificate/TJ93Y6ZT8NTX" target="_blank" rel="noopener noreferrer" class="flex-1 hover:text-red-low hover:underline transition">
+                                        Data Visualization with Python
+                                    </a>
+                                    <a href="https://www.youracclaim.com/badges/47f018b6-ebc2-4ff1-958b-851a71181427?source=linked_in_profile" target="_blank" rel="noopener noreferrer" class="flex flex-1 justify-center items-center bg-red-high text-bright rounded-md max-w-[3rem] p-[0.125rem] hover:bg-light-low hover:text-red-high transition duration-600">
+                                        Badge
+                                    </a>
                                 </li>
                                 <li class="flex">
-                                    <span class="flex-1">Machine Learning with Python</span>
-                                    <a href="" class="flex flex-1 justify-center items-center bg-red-high text-bright rounded-md max-w-[3rem] p-[0.125rem]">Badge</a>
+                                    <a href="https://www.coursera.org/account/accomplishments/certificate/5XWY7B7JNTCL" target="_blank" rel="noopener noreferrer" class="flex-1 hover:text-red-low hover:underline transition">
+                                        Machine Learning with Python
+                                    </a>
+                                    <a href="https://www.youracclaim.com/badges/d72d8167-ae7d-4f54-8f82-afc455410b23?source=linked_in_profile" target="_blank" rel="noopener noreferrer" class="flex flex-1 justify-center items-center bg-red-high text-bright rounded-md max-w-[3rem] p-[0.125rem] hover:bg-light-low hover:text-red-high transition duration-600">
+                                        Badge
+                                    </a>
                                 </li>
                                 <li class="flex">
-                                    <span class="flex-1">Applied Data Science Capstone</span>
-                                    <a href="" class="flex flex-1 justify-center items-center bg-red-high text-bright rounded-md max-w-[3rem] p-[0.125rem]">Badge</a>
+                                    <a href="https://www.coursera.org/account/accomplishments/certificate/MDMMERY5W6MQ" target="_blank" rel="noopener noreferrer" class="flex-1 hover:text-red-low hover:underline transition">
+                                        Applied Data Science Capstone
+                                    </a>
+                                    <a href="https://www.youracclaim.com/badges/60d950f7-3892-401b-9add-f8b3859e764c?source=linked_in_profile" target="_blank" rel="noopener noreferrer" class="flex flex-1 justify-center items-center bg-red-high text-bright rounded-md max-w-[3rem] p-[0.125rem] hover:bg-light-low hover:text-red-high transition duration-600">
+                                        Badge
+                                    </a>
                                 </li>
                             </ul>    
                         </div>
@@ -906,7 +1068,11 @@
                     </div>
                     <div class="rounded-full h-auto min-w-[0.125rem] bg-light-high"></div>
                     <div class="certification-info-container">
-                        <div class="certification-title text-bright text-center text-2xl font-bold">Python for Everybody</div>
+                        <div class="certification-title text-bright text-center text-2xl font-bold">
+                            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/VFSMH8RFUS5T" target="_blank" rel="noopener noreferrer" class="hover:text-red-low hover:underline transition">
+                                Python for Everybody
+                            </a>
+                        </div>
                         <div class="certification-affiliation text-center mb-2 text-2xl">@ University of Michigan</div>
                         <div class="divider w-auto h-1 bg-red-low rounded-full mb-1"></div>
                         <div class="date-container flex flex-row justify-center text-bright p-2">
@@ -916,11 +1082,31 @@
                         </div>
                         <div class="certification-description text-justify text-sm">
                             <ul class="list-disc">
-                                <li>Programming for Everybody (Getting Started with Python)</li>
-                                <li>Python Data Structures</li>
-                                <li>Using Python to Access Web Data</li>
-                                <li>Using Databases with Python</li>
-                                <li>Capstone: Retrieving, Processing, and Visualizing Data with Python</li>
+                                <li>
+                                    <a href="https://www.coursera.org/account/accomplishments/verify/8ZFA35VTTDHV" target="_blank" rel="noopener noreferrer" class="hover:text-red-low hover:underline transition">
+                                        Programming for Everybody (Getting Started with Python)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.coursera.org/account/accomplishments/verify/G6WNHYLU8FDW" target="_blank" rel="noopener noreferrer" class="hover:text-red-low hover:underline transition">
+                                        Python Data Structures
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.coursera.org/account/accomplishments/verify/35HX278777EP" target="_blank" rel="noopener noreferrer" class="hover:text-red-low hover:underline transition">
+                                        Using Python to Access Web Data
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.coursera.org/account/accomplishments/certificate/65B8KDPBBM3X" target="_blank" rel="noopener noreferrer" class="hover:text-red-low hover:underline transition">
+                                        Using Databases with Python
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.coursera.org/account/accomplishments/certificate/44RMF9FWAXP3" target="_blank" rel="noopener noreferrer" class="hover:text-red-low hover:underline transition">
+                                        Capstone: Retrieving, Processing, and Visualizing Data with Python
+                                    </a>
+                                </li>
                             </ul>    
                         </div>
                     </div>
@@ -933,19 +1119,19 @@
     <div class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
         <section class="w-full">
             <h2 id="contact" class="text-3xl font-bold">Contact</h2>
-            <div class="w-[12.25rem] h-2 bg-red-high rounded-full mt-1 mb-4"></div>
+            <div class="w-[7.3rem] h-2 bg-red-high rounded-full mt-1 mb-4"></div>
             <p class="text-sm">Feel free to contact via options below.</p>
 
-            <div class="contact-container mt-10 flex items-center flex-col space-y-5">
+            <div class="contact-container mt-10 flex flex-col space-y-5">
                 <a href="mailto:ferdos.ramin@gmail.com" class="text-3xl font-bold">
                     Ferdos.ramin@gmail.com
                 </a>
-                <a href="" class="">
+                <a href="https://github.com/SimplyRamin" target="_blank" rel="noopener noreferrer" class="">
                     <svg width="75" height="74" viewBox="0 0 75 74" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M37.5 0C16.7812 0 0 16.7812 0 37.5C0 54.0938 10.7344 68.1094 25.6406 73.0781C27.5156 73.4062 28.2188 72.2812 28.2188 71.2969C28.2188 70.4062 28.1719 67.4531 28.1719 64.3125C18.75 66.0469 16.3125 62.0156 15.5625 59.9062C15.1406 58.8281 13.3125 55.5 11.7188 54.6094C10.4062 53.9062 8.53125 52.1719 11.6719 52.125C14.625 52.0781 16.7344 54.8437 17.4375 55.9687C20.8125 61.6406 26.2031 60.0469 28.3594 59.0625C28.6875 56.625 29.6719 54.9844 30.75 54.0469C22.4062 53.1094 13.6875 49.875 13.6875 35.5312C13.6875 31.4531 15.1406 28.0781 17.5312 25.4531C17.1562 24.5156 15.8438 20.6719 17.9062 15.5156C17.9062 15.5156 21.0469 14.5313 28.2188 19.3594C31.2188 18.5156 34.4063 18.0938 37.5938 18.0938C40.7813 18.0938 43.9688 18.5156 46.9688 19.3594C54.1406 14.4844 57.2812 15.5156 57.2812 15.5156C59.3438 20.6719 58.0312 24.5156 57.6562 25.4531C60.0469 28.0781 61.5 31.4062 61.5 35.5312C61.5 49.9219 52.7344 53.1094 44.3906 54.0469C45.75 55.2188 46.9219 57.4688 46.9219 60.9844C46.9219 66 46.875 70.0312 46.875 71.2969C46.875 72.2812 47.5781 73.4531 49.4531 73.0781C64.2656 68.1094 75 54.0469 75 37.5C75 16.7812 58.2188 0 37.5 0Z" fill="#A6A6A6"/>
                     </svg>    
                 </a>
-                <a href="" class="">
+                <a href="https://www.linkedin.com/in/raminferdos/" target="_blank" rel="noopener noreferrer" class="">
                     <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.33333 75H66.6667C71.269 75 75 71.269 75 66.6667V8.33333C75 3.73096 71.269 0 66.6667 0H8.33333C3.73096 0 0 3.73096 0 8.33333V66.6667C0 71.269 3.73096 75 8.33333 75Z" fill="#A6A6A6"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M64.5834 64.5834H53.4538V45.6273C53.4538 40.43 51.479 37.5256 47.3653 37.5256C42.8902 37.5256 40.5522 40.5481 40.5522 45.6273V64.5834H29.8264V28.4723H40.5522V33.3365C40.5522 33.3365 43.7771 27.3691 51.4402 27.3691C59.0997 27.3691 64.5834 32.0464 64.5834 41.7201V64.5834ZM17.0306 23.7438C13.3772 23.7438 10.4167 20.7601 10.4167 17.0803C10.4167 13.4005 13.3772 10.4167 17.0306 10.4167C20.684 10.4167 23.6427 13.4005 23.6427 17.0803C23.6427 20.7601 20.684 23.7438 17.0306 23.7438ZM11.4923 64.5834H22.6765V28.4723H11.4923V64.5834Z" fill="black"/>
@@ -954,7 +1140,7 @@
             </div>
         </section>
     </div>
-
+    <script src="tweak.js"></script>
 
 
 </body>

@@ -551,8 +551,20 @@ video {
   position: fixed;
 }
 
+.sticky {
+  position: sticky;
+}
+
+.top-0 {
+  top: 0px;
+}
+
 .right-0 {
   right: 0px;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .-z-10 {
@@ -630,14 +642,6 @@ video {
   margin-top: 1.25rem;
 }
 
-.mt-24 {
-  margin-top: 6rem;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -648,10 +652,6 @@ video {
 
 .flex {
   display: flex;
-}
-
-.grid {
-  display: grid;
 }
 
 .contents {
@@ -678,12 +678,32 @@ video {
   height: auto;
 }
 
-.h-56 {
-  height: 14rem;
-}
-
 .min-h-\[23rem\] {
   min-height: 23rem;
+}
+
+.min-h-\[18\.5rem\] {
+  min-height: 18.5rem;
+}
+
+.min-h-\[26rem\] {
+  min-height: 26rem;
+}
+
+.min-h-\[22rem\] {
+  min-height: 22rem;
+}
+
+.min-h-\[24\.5rem\] {
+  min-height: 24.5rem;
+}
+
+.min-h-\[18rem\] {
+  min-height: 18rem;
+}
+
+.min-h-\[16rem\] {
+  min-height: 16rem;
 }
 
 .w-full {
@@ -718,12 +738,12 @@ video {
   width: 12.25rem;
 }
 
-.min-w-\[34rem\] {
-  min-width: 34rem;
+.w-\[7\.3rem\] {
+  width: 7.3rem;
 }
 
-.min-w-\[37rem\] {
-  min-width: 37rem;
+.min-w-\[34rem\] {
+  min-width: 34rem;
 }
 
 .min-w-\[0\.125rem\] {
@@ -763,10 +783,6 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.resize-none {
-  resize: none;
-}
-
 .list-disc {
   list-style-type: disc;
 }
@@ -787,20 +803,12 @@ video {
   align-items: center;
 }
 
-.justify-start {
-  justify-content: flex-start;
-}
-
 .justify-center {
   justify-content: center;
 }
 
 .justify-between {
   justify-content: space-between;
-}
-
-.gap-8 {
-  gap: 2rem;
 }
 
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
@@ -851,12 +859,6 @@ video {
   margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
-.space-y-12 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(3rem * var(--tw-space-y-reverse));
-}
-
 .space-y-5 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
@@ -895,10 +897,6 @@ video {
   border-width: 2px;
 }
 
-.border {
-  border-width: 1px;
-}
-
 .border-light-high {
   --tw-border-opacity: 1;
   border-color: rgb(115 115 115 / var(--tw-border-opacity));
@@ -912,11 +910,6 @@ video {
 .border-red-low {
   --tw-border-opacity: 1;
   border-color: rgb(218 86 86 / var(--tw-border-opacity));
-}
-
-.border-light-low {
-  --tw-border-opacity: 1;
-  border-color: rgb(166 166 166 / var(--tw-border-opacity));
 }
 
 .bg-body {
@@ -1006,11 +999,6 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .pb-12 {
@@ -1190,18 +1178,6 @@ html, body{
   color: rgb(166 166 166 / var(--tw-text-opacity));
 }
 
-.badge {
-  border-radius: 0.25rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(218 86 86 / var(--tw-bg-opacity));
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 [id] {
   scroll-margin-top: 100px;
 }
@@ -1266,8 +1242,10 @@ html, body{
   transform-style: preserve-3d;
 }
 
-.project:hover .flip-card-inner {
-  transform: rotateY(180deg);
+@media (min-width: 768px){
+  .project:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
 }
 
 .front-card, .back-card {
@@ -1280,6 +1258,10 @@ html, body{
 
 .back-card {
   transform: rotateY(180deg);
+}
+
+.nav {
+  transition-duration: 1s;
 }
 
 .hover\:bg-light-low:hover {
@@ -1300,6 +1282,11 @@ html, body{
 .hover\:text-red-high:hover {
   --tw-text-opacity: 1;
   color: rgb(176 41 41 / var(--tw-text-opacity));
+}
+
+.hover\:text-lime-800:hover {
+  --tw-text-opacity: 1;
+  color: rgb(63 98 18 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
@@ -1326,6 +1313,18 @@ html, body{
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:min-h-\[23rem\] {
+    min-height: 23rem;
+  }
+
+  .md\:min-w-\[34rem\] {
+    min-width: 34rem;
+  }
+
+  .md\:min-w-\[37rem\] {
+    min-width: 37rem;
   }
 
   .md\:min-w-\[44rem\] {
@@ -1380,14 +1379,6 @@ html, body{
 
   .lg\:w-4 {
     width: 1rem;
-  }
-
-  .lg\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .lg\:gap-32 {
-    gap: 8rem;
   }
 
   .lg\:px-24 {
