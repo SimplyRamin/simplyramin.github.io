@@ -555,10 +555,6 @@ video {
   position: absolute;
 }
 
-.sticky {
-  position: sticky;
-}
-
 .top-0 {
   top: 0px;
 }
@@ -702,8 +698,8 @@ video {
   height: auto;
 }
 
-.min-h-\[23rem\] {
-  min-height: 23rem;
+.min-h-\[25rem\] {
+  min-height: 25rem;
 }
 
 .min-h-\[18\.5rem\] {
@@ -728,6 +724,14 @@ video {
 
 .min-h-\[16rem\] {
   min-height: 16rem;
+}
+
+.min-h-\[2rem\] {
+  min-height: 2rem;
+}
+
+.min-h-\[23rem\] {
+  min-height: 23rem;
 }
 
 .w-full {
