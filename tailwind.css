@@ -698,8 +698,8 @@ video {
   height: auto;
 }
 
-.min-h-\[25rem\] {
-  min-height: 25rem;
+.min-h-\[20rem\] {
+  min-height: 20rem;
 }
 
 .min-h-\[18\.5rem\] {
@@ -724,10 +724,6 @@ video {
 
 .min-h-\[16rem\] {
   min-height: 16rem;
-}
-
-.min-h-\[2rem\] {
-  min-height: 2rem;
 }
 
 .min-h-\[23rem\] {
@@ -776,10 +772,6 @@ video {
 
 .w-\[7\.3rem\] {
   width: 7.3rem;
-}
-
-.min-w-\[34rem\] {
-  min-width: 34rem;
 }
 
 .min-w-\[0\.125rem\] {
