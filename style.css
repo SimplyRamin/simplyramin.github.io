@@ -49,7 +49,7 @@ html, body{
     opacity: 1;
 }
 .project-title {
-    @apply text-bright text-2xl
+    @apply text-bright text-xl sm:text-2xl
 }
 
 ::-webkit-scrollbar {
