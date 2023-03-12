@@ -128,10 +128,10 @@
                 </h2>
                 <div class="w-24 sm:w-32 h-2 bg-red-high rounded-full mt-1 mb-4"></div>
                 <p class="section-paragraph text-sm md:text-base">I've had the honor of working on multiple projects, which you can see below from latest to earliest with links to their resources.<br><span class="text-red-low text-sm">Due to confidentiality matters, some of them are not available for public view.</span></p>
-                <div class="bg-dark-high/30 flex flex-col overflow-y-auto md:overflow-x-auto md:flex-row ">
-                    <div class="project border-dark-low border-4 md:min-w-[34rem] text-center m-2 rounded-lg min-h-[30rem] sm:min-h-[22rem] md:min-h-[23rem] z-1">
+                <div class="bg-dark-high/30 flex flex-col overflow-y-auto md:overflow-x-auto md:flex-row md:min-h-[26rem]">
+                    <div class="project border-dark-low border-4 md:min-w-[34rem] text-center m-2 rounded-lg z-1">
                         <div class="flip-card-inner">
-                            <div class="front-card ">
+                            <div class="relative md:front-card md:absolute">
                                 <h3 class="project-title p-4">
                                     MPT-based Software for Intelligent FX Trading
                                 </h3>
@@ -150,7 +150,7 @@
                                         In this project, which is a multiple-stage project, I developed a software for optimizing MPT trading strategy in FX trading. The mathematical optimization which is constrained for this project was done with the SciPy package and resulted in more accurate optimization than Excel's GRG non-linear solver. Also, a comprehensive pipeline for this project was designed to be able to use MetaTrader application outputs. Logging and, data tracking mechanism was also developed and, implemented.
                                     </p>
                                 </div>
-                                <div class="button-container md:hidden flex mx-5 items-center justify-center">
+                                <div class="button-container md:hidden flex mx-5 items-center justify-center mb-4">
                                     <div class="px-2 py-1 bg-red-high text-bright font-bold flex items-center space-x-2 rounded-lg hover:bg-light-low hover:text-red-high transition duration-600">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M18.2371 15.1157C19.0484 14.3833 19.7137 13.6416 20.188 13.0657C20.5762 12.5944 20.7703 12.3588 20.7703 12C20.7703 11.6412 20.5762 11.4056 20.188 10.9343C18.768 9.21014 15.6357 6 12 6C11.1605 6 10.3479 6.17115 9.57695 6.45563L12.1238 9.00251C13.6822 9.06577 14.9342 10.3178 14.9975 11.8762L18.2371 15.1157ZM9.39308 10.5144C9.14295 10.9524 9.00001 11.4595 9.00001 12C9.00001 13.6569 10.3432 15 12 15C12.5405 15 13.0476 14.8571 13.4856 14.6069L15.7872 16.9085C14.636 17.5555 13.3529 18 12 18C8.36428 18 5.23207 14.7899 3.81198 13.0657C3.42382 12.5944 3.22974 12.3588 3.22974 12C3.22974 11.6412 3.42382 11.4056 3.81198 10.9343C4.48541 10.1167 5.54385 8.96489 6.85842 7.97974L9.39308 10.5144Z" fill="#33363F"/>
@@ -160,7 +160,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="back-card bg-red-high rounded-lg flex items-center justify-center">
+                            <div class="hidden back-card md:bg-red-high md:rounded-lg md:flex md:items-center md:justify-center">
                                 <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M18.2371 15.1157C19.0484 14.3833 19.7137 13.6416 20.188 13.0657C20.5762 12.5944 20.7703 12.3588 20.7703 12C20.7703 11.6412 20.5762 11.4056 20.188 10.9343C18.768 9.21014 15.6357 6 12 6C11.1605 6 10.3479 6.17115 9.57695 6.45563L12.1238 9.00251C13.6822 9.06577 14.9342 10.3178 14.9975 11.8762L18.2371 15.1157ZM9.39308 10.5144C9.14295 10.9524 9.00001 11.4595 9.00001 12C9.00001 13.6569 10.3432 15 12 15C12.5405 15 13.0476 14.8571 13.4856 14.6069L15.7872 16.9085C14.636 17.5555 13.3529 18 12 18C8.36428 18 5.23207 14.7899 3.81198 13.0657C3.42382 12.5944 3.22974 12.3588 3.22974 12C3.22974 11.6412 3.42382 11.4056 3.81198 10.9343C4.48541 10.1167 5.54385 8.96489 6.85842 7.97974L9.39308 10.5144Z" fill="#fefefe"/>
                                 <path d="M5 2L21 18" stroke="#fefefe" stroke-width="2"/>
@@ -169,10 +169,9 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="project border-dark-low border-4 md:min-w-[34rem] text-center m-2 rounded-lg min-h-[21.75rem] sm:min-h-[18.5rem] md:min-h-[23rem] z-1">
+                    <div class="project border-dark-low border-4 md:min-w-[34rem] text-center m-2 rounded-lg z-1">
                         <div class="flip-card-inner">
-                            <div class="front-card">
+                            <div class="relative md:front-card md:absolute">
                                 <h3 class="project-title p-4">
                                     GANs for Educational Purposes
                                 </h3>
@@ -191,7 +190,7 @@
                                         In this project, I try to implement and teach multiple and different GANs architectures and tackle well-known challenges in this area. These contents are mostly tightly knitted to the posts shared on the LinkedIn account and can be reviewed as additional resources for those posts.
                                     </p>
                                 </div>
-                                <div class="button-container md:hidden flex mx-5 items-center justify-center">
+                                <div class="button-container md:hidden flex mx-5 items-center justify-center mb-4">
                                     <a href="https://github.com/SimplyRamin/GANs" target="_blank" rel="noopener noreferrer" class="px-2 py-1 bg-green text-bright font-bold flex items-center space-x-2 rounded-lg hover:bg-light-low hover:text-lime-800 transition duration-600">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M20.7703 12C20.7703 11.6412 20.5762 11.4056 20.188 10.9343C18.768 9.21014 15.6357 6 12 6C8.36428 6 5.23207 9.21014 3.81198 10.9343C3.42382 11.4056 3.22974 11.6412 3.22974 12C3.22974 12.3588 3.42382 12.5944 3.81198 13.0657C5.23207 14.7899 8.36428 18 12 18C15.6357 18 18.768 14.7899 20.188 13.0657C20.5762 12.5944 20.7703 12.3588 20.7703 12ZM12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3432 9 9.00002 10.3431 9.00002 12C9.00002 13.6569 10.3432 15 12 15Z" fill="#33363F"/>
@@ -200,7 +199,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="back-card bg-green rounded-lg flex flex-col items-center justify-center">
+                            <div class="hidden back-card md:bg-green md:rounded-lg md:flex md:flex-col md:items-center md:justify-center">
                                 <a href="https://github.com/SimplyRamin/GANs" target="_blank" rel="noopener noreferrer">
                                     <div class="container-title-logo flex flex-row items-center justify-center">
                                         <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -215,9 +214,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project border-dark-low border-4 md:min-w-[34rem] text-center m-2 rounded-lg min-h-[37rem] sm:min-h-[26rem] md:min-h-[23rem]">
+                    <div class="project border-dark-low border-4 md:min-w-[34rem] text-center m-2 rounded-lg">
                         <div class="flip-card-inner">
-                            <div class="front-card">
+                            <div class="relative md:front-card md:absolute">
                                 <h3 class="project-title p-4">
                                     ML Based Instagram's Influencer Ranker
                                 </h3>
@@ -236,7 +235,7 @@
                                         In this project, I trained a model for ranking the influencers on Instagram. I asked three experts in digital marketing with many years of experience to score the training dataset of influencers which all are shuffled and de-identified to remove the biases towards them. I created a pipeline based on Instagram's API to extract features to rank influencers, some of these features are not available in Instagram mobile or web application, such as category, etc, and some of these features are calculated based on other features such as frequency of sharing posts, etc. also, a logging mechanism designed for this pipeline so after deployment of this model, a dataset for retraining and discovering far-out influencers.
                                     </p>
                                 </div>
-                                <div class="button-container md:hidden flex mx-5 items-center justify-center">
+                                <div class="button-container md:hidden flex mx-5 items-center justify-center mb-4">
                                     <div class="px-2 py-1 bg-red-high text-bright font-bold flex items-center space-x-2 rounded-lg hover:bg-light-low hover:text-red-high transition duration-600">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M18.2371 15.1157C19.0484 14.3833 19.7137 13.6416 20.188 13.0657C20.5762 12.5944 20.7703 12.3588 20.7703 12C20.7703 11.6412 20.5762 11.4056 20.188 10.9343C18.768 9.21014 15.6357 6 12 6C11.1605 6 10.3479 6.17115 9.57695 6.45563L12.1238 9.00251C13.6822 9.06577 14.9342 10.3178 14.9975 11.8762L18.2371 15.1157ZM9.39308 10.5144C9.14295 10.9524 9.00001 11.4595 9.00001 12C9.00001 13.6569 10.3432 15 12 15C12.5405 15 13.0476 14.8571 13.4856 14.6069L15.7872 16.9085C14.636 17.5555 13.3529 18 12 18C8.36428 18 5.23207 14.7899 3.81198 13.0657C3.42382 12.5944 3.22974 12.3588 3.22974 12C3.22974 11.6412 3.42382 11.4056 3.81198 10.9343C4.48541 10.1167 5.54385 8.96489 6.85842 7.97974L9.39308 10.5144Z" fill="#33363F"/>
@@ -246,7 +245,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="back-card bg-red-high rounded-lg flex items-center justify-center">
+                            <div class="hidden back-card md:bg-red-high md:rounded-lg flex md:items-center md:justify-center">
                                 <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M18.2371 15.1157C19.0484 14.3833 19.7137 13.6416 20.188 13.0657C20.5762 12.5944 20.7703 12.3588 20.7703 12C20.7703 11.6412 20.5762 11.4056 20.188 10.9343C18.768 9.21014 15.6357 6 12 6C11.1605 6 10.3479 6.17115 9.57695 6.45563L12.1238 9.00251C13.6822 9.06577 14.9342 10.3178 14.9975 11.8762L18.2371 15.1157ZM9.39308 10.5144C9.14295 10.9524 9.00001 11.4595 9.00001 12C9.00001 13.6569 10.3432 15 12 15C12.5405 15 13.0476 14.8571 13.4856 14.6069L15.7872 16.9085C14.636 17.5555 13.3529 18 12 18C8.36428 18 5.23207 14.7899 3.81198 13.0657C3.42382 12.5944 3.22974 12.3588 3.22974 12C3.22974 11.6412 3.42382 11.4056 3.81198 10.9343C4.48541 10.1167 5.54385 8.96489 6.85842 7.97974L9.39308 10.5144Z" fill="#fefefe"/>
                                     <path d="M5 2L21 18" stroke="#fefefe" stroke-width="2"/>
@@ -255,9 +254,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project border-dark-low border-4 md:min-w-[34rem] text-center m-2 rounded-lg min-h-[31rem] sm:min-h-[22rem] md:min-h-[23rem]">
+                    <div class="project border-dark-low border-4 md:min-w-[34rem] text-center m-2 rounded-lg">
                         <div class="flip-card-inner">
-                            <div class="front-card">
+                            <div class="relative md:front-card md:absolute">
                                 <h3 class="project-title p-4">
                                     Pullup Campaign Data-Driven Analysis
                                 </h3>
@@ -276,7 +275,7 @@
                                         In this project, I analyzed the pullup campaign with a data science approach. this campaign was held for Zarrin Roya company and operated on Instagram. In this project, I analyzed the data of the campaign, extracted strategic insights which shaped the future marketing plans of the aforementioned company, and trained multiple models for predicting the price of advertising media, influencer, and their situation of profit. Two learning approaches and three approaches and multiple machine learning algorithms were implemented.
                                     </p>
                                 </div>
-                                <div class="button-container md:hidden flex mx-5 items-center justify-center">
+                                <div class="button-container md:hidden flex mx-5 items-center justify-center mb-4">
                                     <div class="px-2 py-1 bg-red-high text-bright font-bold flex items-center space-x-2 rounded-lg hover:bg-light-low hover:text-red-high transition duration-600">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M18.2371 15.1157C19.0484 14.3833 19.7137 13.6416 20.188 13.0657C20.5762 12.5944 20.7703 12.3588 20.7703 12C20.7703 11.6412 20.5762 11.4056 20.188 10.9343C18.768 9.21014 15.6357 6 12 6C11.1605 6 10.3479 6.17115 9.57695 6.45563L12.1238 9.00251C13.6822 9.06577 14.9342 10.3178 14.9975 11.8762L18.2371 15.1157ZM9.39308 10.5144C9.14295 10.9524 9.00001 11.4595 9.00001 12C9.00001 13.6569 10.3432 15 12 15C12.5405 15 13.0476 14.8571 13.4856 14.6069L15.7872 16.9085C14.636 17.5555 13.3529 18 12 18C8.36428 18 5.23207 14.7899 3.81198 13.0657C3.42382 12.5944 3.22974 12.3588 3.22974 12C3.22974 11.6412 3.42382 11.4056 3.81198 10.9343C4.48541 10.1167 5.54385 8.96489 6.85842 7.97974L9.39308 10.5144Z" fill="#33363F"/>
@@ -286,7 +285,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="back-card bg-red-high rounded-lg flex items-center justify-center">
+                            <div class="hidden back-card md:bg-red-high md:rounded-lg md:flex md:items-center md:justify-center">
                                 <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M18.2371 15.1157C19.0484 14.3833 19.7137 13.6416 20.188 13.0657C20.5762 12.5944 20.7703 12.3588 20.7703 12C20.7703 11.6412 20.5762 11.4056 20.188 10.9343C18.768 9.21014 15.6357 6 12 6C11.1605 6 10.3479 6.17115 9.57695 6.45563L12.1238 9.00251C13.6822 9.06577 14.9342 10.3178 14.9975 11.8762L18.2371 15.1157ZM9.39308 10.5144C9.14295 10.9524 9.00001 11.4595 9.00001 12C9.00001 13.6569 10.3432 15 12 15C12.5405 15 13.0476 14.8571 13.4856 14.6069L15.7872 16.9085C14.636 17.5555 13.3529 18 12 18C8.36428 18 5.23207 14.7899 3.81198 13.0657C3.42382 12.5944 3.22974 12.3588 3.22974 12C3.22974 11.6412 3.42382 11.4056 3.81198 10.9343C4.48541 10.1167 5.54385 8.96489 6.85842 7.97974L9.39308 10.5144Z" fill="#fefefe"/>
                                     <path d="M5 2L21 18" stroke="#fefefe" stroke-width="2"/>
@@ -295,9 +294,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project border-dark-low border-4 md:min-w-[37rem] text-center m-2 rounded-lg min-h-[37.5rem] sm:min-h-[24.5rem] md:min-h-[23rem]">
+                    <div class="project border-dark-low border-4 md:min-w-[37rem] text-center m-2 rounded-lg">
                         <div class="flip-card-inner">
-                            <div class="front-card">
+                            <div class="relative md:front-card md:absolute">
                                 <h3 class="project-title p-4 text-xl">
                                     #Bekhatereman Campaign Data-Driven Analysis
                                 </h3>
@@ -316,7 +315,7 @@
                                         In this project, I analyzed the #Bekhatereman campaign (a CSR Campaign for the Official Distributor of Mitsubishi Motors in Iran) data with the Data Science approach. The goal of this project was to assess the effectiveness of this campaign which was held on Instagram based on advertising cost and sentiment analysis. In this project, I have used the CRISP-DM methodology. Every aspect of this project was implemented from scratch by me the most important section is data gathering which I designed and developed an Instagram bot to retrieve the data necessary for this endeavor. In this project, I have trained more than 250 models with different algorithms and hyperparameters.
                                     </p>
                                 </div>
-                                <div class="button-container md:hidden flex mx-5 items-center justify-center">
+                                <div class="button-container md:hidden flex mx-5 items-center justify-center mb-4">
                                     <a href="https://github.com/SimplyRamin/bekhatereman_campaign_analysis" target="_blank" rel="noopener noreferrer" class="px-2 py-1 bg-green text-bright font-bold flex items-center space-x-2 rounded-lg hover:bg-light-low hover:text-lime-800 transition duration-600">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M20.7703 12C20.7703 11.6412 20.5762 11.4056 20.188 10.9343C18.768 9.21014 15.6357 6 12 6C8.36428 6 5.23207 9.21014 3.81198 10.9343C3.42382 11.4056 3.22974 11.6412 3.22974 12C3.22974 12.3588 3.42382 12.5944 3.81198 13.0657C5.23207 14.7899 8.36428 18 12 18C15.6357 18 18.768 14.7899 20.188 13.0657C20.5762 12.5944 20.7703 12.3588 20.7703 12ZM12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3432 9 9.00002 10.3431 9.00002 12C9.00002 13.6569 10.3432 15 12 15Z" fill="#33363F"/>
@@ -325,7 +324,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="back-card bg-green rounded-lg flex flex-col items-center justify-center">
+                            <div class="hidden back-card md:bg-green md:rounded-lg md:flex md:flex-col md:items-center md:justify-center">
                                 <a href="https://github.com/SimplyRamin/bekhatereman_campaign_analysis" target="_blank" rel="noopener noreferrer">
                                     <div class="container-title-logo flex flex-row items-center justify-center">
                                         <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -340,9 +339,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project border-dark-low border-4 md:min-w-[34rem] text-center m-2 rounded-lg min-h-[23rem] sm:min-h-[18rem] md:min-h-[23rem]">
+                    <div class="project border-dark-low border-4 md:min-w-[34rem] text-center m-2 rounded-lg">
                         <div class="flip-card-inner">
-                            <div class="front-card">
+                            <div class="relative md:front-card md:absolute">
                                 <h3 class="project-title p-4">
                                     Test-Driven Design Playground
                                 </h3>
@@ -361,7 +360,7 @@
                                         In this repository, I have implemented the test-driven design pattern for a simple problem within Python. also, a basic test for GitHub workflow to achieve CI is implemented. This project is inspired by the "Learning Test-Driven Development" book by Saleem Siddiqui, all credits are due to this book.
                                     </p>
                                 </div>
-                                <div class="button-container md:hidden flex mx-5 items-center justify-center">
+                                <div class="button-container md:hidden flex mx-5 items-center justify-center mb-4">
                                     <a href="https://github.com/SimplyRamin/TDD_Playground" target="_blank" rel="noopener noreferrer" class="px-2 py-1 bg-green text-bright font-bold flex items-center space-x-2 rounded-lg hover:bg-light-low hover:text-lime-800 transition duration-600">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M20.7703 12C20.7703 11.6412 20.5762 11.4056 20.188 10.9343C18.768 9.21014 15.6357 6 12 6C8.36428 6 5.23207 9.21014 3.81198 10.9343C3.42382 11.4056 3.22974 11.6412 3.22974 12C3.22974 12.3588 3.42382 12.5944 3.81198 13.0657C5.23207 14.7899 8.36428 18 12 18C15.6357 18 18.768 14.7899 20.188 13.0657C20.5762 12.5944 20.7703 12.3588 20.7703 12ZM12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3432 9 9.00002 10.3431 9.00002 12C9.00002 13.6569 10.3432 15 12 15Z" fill="#33363F"/>
@@ -370,7 +369,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="back-card bg-green rounded-lg flex flex-col items-center justify-center">
+                            <div class="hidden back-card md:bg-green md:rounded-lg md:flex md:flex-col md:items-center md:justify-center">
                                 <a href="https://github.com/SimplyRamin/TDD_Playground" target="_blank" rel="noopener noreferrer">
                                     <div class="container-title-logo flex flex-row items-center justify-center">
                                         <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -385,9 +384,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project border-dark-low border-4 md:min-w-[34rem] text-center m-2 rounded-lg min-h-[24rem] sm:min-h-[18rem] md:min-h-[23rem]">
+                    <div class="project border-dark-low border-4 md:min-w-[34rem] text-center m-2 rounded-lg">
                         <div class="flip-card-inner">
-                            <div class="front-card">
+                            <div class="relative md:front-card md:absolute">
                                 <h3 class="project-title p-4">
                                     Multiple NN Architectures with PyTorch
                                 </h3>
@@ -406,7 +405,7 @@
                                         I implemented multiple and famous architectures of neural networks with the PyTorch library. Almost all of the mentioned neural network architectures in skills are implemented in this project. It's worth mentioning that multiple datasets such as MNIST, CIFAR, etc. are used in this project.
                                     </p>
                                 </div>
-                                <div class="button-container md:hidden flex mx-5 items-center justify-center">
+                                <div class="button-container md:hidden flex mx-5 items-center justify-center mb-4">
                                     <a href="https://github.com/SimplyRamin/PyTorch-Guides" target="_blank" rel="noopener noreferrer" class="px-2 py-1 bg-green text-bright font-bold flex items-center space-x-2 rounded-lg hover:bg-light-low hover:text-lime-800 transition duration-600">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M20.7703 12C20.7703 11.6412 20.5762 11.4056 20.188 10.9343C18.768 9.21014 15.6357 6 12 6C8.36428 6 5.23207 9.21014 3.81198 10.9343C3.42382 11.4056 3.22974 11.6412 3.22974 12C3.22974 12.3588 3.42382 12.5944 3.81198 13.0657C5.23207 14.7899 8.36428 18 12 18C15.6357 18 18.768 14.7899 20.188 13.0657C20.5762 12.5944 20.7703 12.3588 20.7703 12ZM12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3432 9 9.00002 10.3431 9.00002 12C9.00002 13.6569 10.3432 15 12 15Z" fill="#33363F"/>
@@ -415,7 +414,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="back-card bg-green rounded-lg flex flex-col items-center justify-center">
+                            <div class="hidden back-card md:bg-green md:rounded-lg md:flex md:flex-col md:items-center md:justify-center">
                                 <a href="https://github.com/SimplyRamin/PyTorch-Guides" target="_blank" rel="noopener noreferrer">
                                     <div class="container-title-logo flex flex-row items-center justify-center">
                                         <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -430,9 +429,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project border-dark-low border-4 md:min-w-[34rem] text-center m-2 rounded-lg min-h-[20rem] sm:min-h-[16rem] md:min-h-[23rem]">
+                    <div class="project border-dark-low border-4 md:min-w-[34rem] text-center m-2 rounded-lg">
                         <div class="flip-card-inner">
-                            <div class="front-card">
+                            <div class="relative md:front-card md:absolute">
                                 <h3 class="project-title p-4">
                                     Implementation of ANN from Scratch
                                 </h3>
@@ -451,7 +450,7 @@
                                         I implemented an artificial neural network from scratch with 4 different models, for instances in which I used a deep learning library, I used PyTorch.
                                     </p>
                                 </div>
-                                <div class="button-container md:hidden flex mx-5 items-center justify-center">
+                                <div class="button-container md:hidden flex mx-5 items-center justify-center mb-4">
                                     <a href="https://github.com/SimplyRamin/Neural-Net-From-Scratch-to-Implementation-with-PyTorch" target="_blank" rel="noopener noreferrer" class="px-2 py-1 bg-green text-bright font-bold flex items-center space-x-2 rounded-lg hover:bg-light-low hover:text-lime-800 transition duration-600">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M20.7703 12C20.7703 11.6412 20.5762 11.4056 20.188 10.9343C18.768 9.21014 15.6357 6 12 6C8.36428 6 5.23207 9.21014 3.81198 10.9343C3.42382 11.4056 3.22974 11.6412 3.22974 12C3.22974 12.3588 3.42382 12.5944 3.81198 13.0657C5.23207 14.7899 8.36428 18 12 18C15.6357 18 18.768 14.7899 20.188 13.0657C20.5762 12.5944 20.7703 12.3588 20.7703 12ZM12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3432 9 9.00002 10.3431 9.00002 12C9.00002 13.6569 10.3432 15 12 15Z" fill="#33363F"/>
@@ -460,7 +459,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="back-card bg-green rounded-lg flex flex-col items-center justify-center">
+                            <div class="hidden back-card md:bg-green md:rounded-lg md:flex md:flex-col md:items-center md:justify-center">
                                 <a href="https://github.com/SimplyRamin/Neural-Net-From-Scratch-to-Implementation-with-PyTorch" target="_blank" rel="noopener noreferrer">
                                     <div class="container-title-logo flex flex-row items-center justify-center">
                                         <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
