@@ -97,3 +97,7 @@ html, body{
 .nav {
     transition-duration: 1s;
 }
+
+.side-nav{
+    width: 0px;
+}
