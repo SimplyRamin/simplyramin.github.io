@@ -141,7 +141,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Ramin F. - [@SimplyRamin](https://www.linkedin.com/in/raminferdos/) - ferdos.ramin@gmail.com - [Website](https://simplyramin.github.io)
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/SimplyRamin/simplyramin.github.io](https://github.com/SimplyRamin/simplyramin.github.io)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
