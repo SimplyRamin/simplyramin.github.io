@@ -150,7 +150,7 @@ Project Link: [https://github.com/SimplyRamin/simplyramin.github.io](https://git
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-I want to express my gratitude to the open-source community and everyone who has supported me on my journey to becoming a proficient web developer. Thank you for visiting my portfolio, and I look forward to connecting with you!
+I want to express my gratitude to the open-source community and everyone who has supported me on my journey. Thank you for visiting my portfolio, and I look forward to connecting with you!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
