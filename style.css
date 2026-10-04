@@ -91,6 +91,8 @@ html, body{
     backface-visibility: hidden;
 }
 .back-card {
+    top: 0;
+    left: 0;
     transform: rotateY(180deg);
 }
 
