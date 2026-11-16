@@ -55,6 +55,10 @@ html, body{
 .project-title {
     @apply text-bright text-lg sm:text-xl font-bold leading-snug;
 }
+.project-title::after {
+    content: "";
+    @apply block w-10 h-1 bg-red-high rounded-full mt-2;
+}
 .project-filter {
     @apply rounded-full border-2 border-dark-low px-4 py-1.5 text-sm font-medium text-light-low transition-colors hover:border-red-low hover:text-bright focus:outline-none focus-visible:ring-2 focus-visible:ring-red-low focus-visible:ring-offset-2 focus-visible:ring-offset-body;
 }
@@ -65,7 +69,11 @@ html, body{
     @apply ml-1 text-xs opacity-80;
 }
 .project-card {
-    @apply flex h-full flex-col rounded-lg border-2 border-dark-low bg-dark-high/30 p-5 text-left transition-colors hover:border-light-high;
+    @apply flex h-full flex-col rounded-lg border-2 border-dark-low bg-dark-high/30 p-5 text-left transition-colors hover:border-red-high;
+}
+/* keyboard focus inside a card highlights it like hover */
+.project-card:has(:focus-visible) {
+    @apply border-red-high;
 }
 .project-badge {
     @apply shrink-0 rounded-full border px-2.5 py-0.5 text-xs font-bold uppercase tracking-wide;

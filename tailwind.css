@@ -3018,6 +3018,17 @@ html, body{
   }
 }
 
+.project-title::after {
+  content: "";
+  margin-top: 0.5rem;
+  display: block;
+  height: 0.25rem;
+  width: 2.5rem;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(176 41 41 / var(--tw-bg-opacity));
+}
+
 .project-filter {
   border-radius: 9999px;
   border-width: 2px;
@@ -3093,7 +3104,14 @@ html, body{
 
 .project-card:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(115 115 115 / var(--tw-border-opacity));
+  border-color: rgb(176 41 41 / var(--tw-border-opacity));
+}
+
+/* keyboard focus inside a card highlights it like hover */
+
+.project-card:has(:focus-visible) {
+  --tw-border-opacity: 1;
+  border-color: rgb(176 41 41 / var(--tw-border-opacity));
 }
 
 .project-badge {
