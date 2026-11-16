@@ -48,8 +48,53 @@ html, body{
 .nav-dot:hover span {
     opacity: 1;
 }
+/* Projects */
+[hidden] {
+    display: none !important;
+}
 .project-title {
-    @apply text-bright text-xl sm:text-2xl
+    @apply text-bright text-lg sm:text-xl font-bold leading-snug truncate;
+}
+.project-title::after {
+    content: "";
+    @apply block w-full h-1 bg-red-high rounded-full mt-2;
+}
+.project-filter {
+    @apply rounded-full border-2 border-dark-low px-4 py-1.5 text-sm font-medium text-light-low transition-colors hover:border-red-low hover:text-bright focus:outline-none focus-visible:ring-2 focus-visible:ring-red-low focus-visible:ring-offset-2 focus-visible:ring-offset-body;
+}
+.project-filter[aria-pressed="true"] {
+    @apply border-red-high bg-red-high text-bright;
+}
+.project-filter-count {
+    @apply ml-1 text-xs opacity-80;
+}
+.project-card {
+    @apply flex h-full flex-col rounded-lg border-2 border-dark-low bg-dark-high/30 p-5 text-left transition-colors hover:border-red-high;
+}
+/* keyboard focus inside a card highlights it like hover */
+.project-card:has(:focus-visible) {
+    @apply border-red-high;
+}
+.project-badge {
+    @apply shrink-0 rounded-full border px-2.5 py-0.5 text-xs font-bold uppercase tracking-wide;
+}
+.project-tag {
+    @apply rounded-md bg-dark-high px-2 py-0.5 text-xs text-light-low;
+}
+.project-desc {
+    @apply mt-3 text-sm leading-5 text-light-low;
+}
+/* 4 lines of text-sm / leading-5 */
+.project-desc.is-clamped {
+    max-height: 5rem;
+    overflow: hidden;
+}
+.project-desc.is-clamped.has-overflow {
+    -webkit-mask-image: linear-gradient(to bottom, #000 55%, transparent);
+    mask-image: linear-gradient(to bottom, #000 55%, transparent);
+}
+.project-more {
+    @apply mt-2 self-start rounded text-sm font-bold text-red-low hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-red-low focus-visible:ring-offset-2 focus-visible:ring-offset-body;
 }
 
 ::-webkit-scrollbar {
@@ -65,35 +110,6 @@ html, body{
     border-radius: 10px;
     background: linear-gradient(left, #3e3e3e, #111, #000);
     box-shadow: inset 0 0 1px 1px #646464;
-}
-
-.project {
-    perspective: 1000px;
-}
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-@media (min-width: 768px){
-    .project:hover .flip-card-inner {
-        transform: rotateY(180deg);
-    }
-}
-.front-card, .back-card {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-.back-card {
-    top: 0;
-    left: 0;
-    transform: rotateY(180deg);
 }
 
 .nav {
