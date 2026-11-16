@@ -57,7 +57,7 @@ html, body{
 }
 .project-title::after {
     content: "";
-    @apply block w-10 h-1 bg-red-high rounded-full mt-2;
+    @apply block w-full h-1 bg-red-high rounded-full mt-2;
 }
 .project-filter {
     @apply rounded-full border-2 border-dark-low px-4 py-1.5 text-sm font-medium text-light-low transition-colors hover:border-red-low hover:text-bright focus:outline-none focus-visible:ring-2 focus-visible:ring-red-low focus-visible:ring-offset-2 focus-visible:ring-offset-body;
