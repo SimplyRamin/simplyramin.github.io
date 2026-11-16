@@ -3003,6 +3003,9 @@ html, body{
 }
 
 .project-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 700;
@@ -3483,10 +3486,6 @@ html, body{
     width: 1rem;
   }
 
-  .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .lg\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
@@ -3506,6 +3505,10 @@ html, body{
 
   .xl\:block {
     display: block;
+  }
+
+  .xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 

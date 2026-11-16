@@ -53,7 +53,7 @@ html, body{
     display: none !important;
 }
 .project-title {
-    @apply text-bright text-lg sm:text-xl font-bold leading-snug;
+    @apply text-bright text-lg sm:text-xl font-bold leading-snug truncate;
 }
 .project-title::after {
     content: "";
