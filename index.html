@@ -474,7 +474,7 @@
                 <p class="lead">From marketing analytics to leading AI products across a 103,000-employee holding.</p>
 
                 <h3 class="group-label">industry</h3>
-                <ol>
+                <ol class="timeline">
                     <li class="xp">
                         <div><p class="xp-date">Jun 2025 — now</p><p class="xp-now">current</p></div>
                         <div>
@@ -522,7 +522,7 @@
                 </ol>
 
                 <h3 class="group-label">research &amp; mentoring</h3>
-                <ol>
+                <ol class="timeline">
                     <li class="xp">
                         <div><p class="xp-date">Aug 2023 — Aug 2025</p></div>
                         <div>
@@ -596,7 +596,7 @@
                 <h2 id="education-title" class="section-title">Education &amp; certifications</h2>
 
                 <h3 class="group-label">degrees</h3>
-                <ol>
+                <ol class="timeline">
                     <li class="edu">
                         <p class="xp-date">Sep 2018 — Sep 2021</p>
                         <div>
@@ -752,9 +752,10 @@
                 <p class="eyebrow"><b>05</b> // contact</p>
                 <h2 id="contact-title" class="section-title">Let's build something</h2>
                 <p class="lead">Have a role, a project or a hard AI problem? Email is the fastest way to reach me.</p>
-                <div class="term mt-10 max-w-3xl">
+                <div class="mt-10 grid items-start gap-6 lg:grid-cols-2">
+                <div class="term">
                     <div class="term-bar"><span class="term-dots" aria-hidden="true"><i></i><i></i><i></i></span>contact.sh</div>
-                    <div class="p-6 sm:p-8">
+                    <div class="p-4 sm:p-8">
                         <p class="font-mono text-sm text-muted"><span class="text-red-low">$</span> echo $EMAIL</p>
                         <div class="mt-3 flex flex-wrap items-center gap-4">
                             <a href="mailto:ferdos.ramin@gmail.com" class="email">ferdos.ramin@gmail.com</a>
@@ -770,6 +771,23 @@
                         </div>
                     </div>
                 </div>
+                <div id="shell" class="term flex flex-col" hidden>
+                    <div class="term-bar"><span class="term-dots" aria-hidden="true"><i></i><i></i><i></i></span>ramin-shell<span class="ml-auto text-green">● interactive</span></div>
+                    <div id="shell-out" class="shell-out" role="log" aria-live="polite" aria-label="Shell output"></div>
+                    <form id="shell-form" class="shell-form" autocomplete="off">
+                        <label for="shell-in">guest@ferdos:~$</label>
+                        <input id="shell-in" type="text" aria-label="Type a shell command" placeholder="type help" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="send">
+                    </form>
+                    <div class="flex flex-wrap gap-2 border-t border-line px-5 py-3" aria-label="Suggested commands" role="group">
+                        <button type="button" class="shell-chip" data-cmd="help">help</button>
+                        <button type="button" class="shell-chip" data-cmd="whoami">whoami</button>
+                        <button type="button" class="shell-chip" data-cmd="projects">projects</button>
+                        <button type="button" class="shell-chip" data-cmd="stack">stack</button>
+                        <button type="button" class="shell-chip" data-cmd="contact">contact</button>
+                        <button type="button" class="shell-chip" data-cmd="sudo hire ramin">sudo hire ramin</button>
+                    </div>
+                </div>
+                </div>
             </div>
         </section>
     </main>
@@ -784,5 +802,7 @@
 
     <script src="site.js" defer></script>
     <script src="projects.js" defer></script>
+    <script src="fx.js" defer></script>
+    <script src="shell.js" defer></script>
 </body>
 </html>

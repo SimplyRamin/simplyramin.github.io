@@ -339,8 +339,170 @@ body {
 
 /* ---------- Contact / footer ---------- */
 .email {
-    @apply break-all font-mono text-2xl font-bold text-bright decoration-red-low decoration-2 underline-offset-8 hover:underline sm:text-4xl;
+    @apply font-mono text-base font-bold text-bright decoration-red-low decoration-2 underline-offset-8 [overflow-wrap:anywhere] hover:underline min-[400px]:text-2xl sm:text-4xl lg:text-[1.75rem] xl:text-3xl;
 }
 .site-footer {
     @apply border-t border-line py-10 font-mono text-xs text-muted;
+}
+
+/* =========================================================
+   Motion & interaction layer (only active once fx.js adds .fx)
+   ========================================================= */
+
+/* Scroll reveal */
+.fx [data-reveal] {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+    transition-delay: var(--d, 0ms);
+}
+.fx [data-reveal].is-in {
+    opacity: 1;
+    transform: none;
+}
+
+/* Section eyebrow types itself like a command */
+.fx .section .eyebrow {
+    display: inline-block;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: bottom;
+    border-right: 0.55em solid transparent;
+}
+.fx .section.is-in .eyebrow {
+    animation: eyebrow-type 0.7s steps(var(--n, 12)) 0.1s forwards, eyebrow-caret 0.8s step-end 0s 4;
+}
+@keyframes eyebrow-type {
+    to { width: calc(var(--n, 12) * 1ch + 0.55em); }
+}
+@keyframes eyebrow-caret {
+    0%, 100% { border-color: #da5656; }
+    50% { border-color: transparent; }
+}
+
+/* A red pulse sweeps along the section's top border when it enters */
+.section {
+    position: relative;
+}
+.section::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -1px;
+    height: 1px;
+    pointer-events: none;
+    background: linear-gradient(90deg, transparent, #da5656, transparent) no-repeat;
+    background-size: 14rem 1px;
+    background-position: -14rem 0;
+    opacity: 0;
+}
+.section.is-in::after {
+    animation: border-sweep 1.8s cubic-bezier(0.3, 0.6, 0.2, 1) 0.1s 1;
+}
+@keyframes border-sweep {
+    0% { background-position: -14rem 0; opacity: 1; }
+    90% { opacity: 1; }
+    100% { background-position: calc(100% + 14rem) 0; opacity: 0; }
+}
+
+/* Pointer spotlight */
+.spot {
+    background-image: radial-gradient(26rem circle at var(--mx, -100rem) var(--my, -100rem), rgba(218, 86, 86, 0.11), transparent 45%);
+}
+
+/* Timeline rail (experience & degrees) */
+.timeline {
+    position: relative;
+    padding-left: 1.75rem;
+}
+.timeline::before,
+.timeline::after {
+    content: "";
+    position: absolute;
+    left: 0.35rem;
+    top: 0;
+    width: 1px;
+}
+.timeline::before {
+    bottom: 0;
+    background: #232323;
+}
+.timeline::after {
+    height: calc(var(--p, 0) * 100%);
+    background: linear-gradient(to bottom, #b02929, #da5656);
+    box-shadow: 0 0 10px rgba(218, 86, 86, 0.5);
+}
+.timeline > li {
+    position: relative;
+}
+.timeline > li::before {
+    content: "";
+    position: absolute;
+    left: calc(-1.75rem + 0.35rem - 4.5px);
+    top: 2.4rem;
+    width: 9px;
+    height: 9px;
+    border-radius: 9999px;
+    background: #0d0d0d;
+    border: 1px solid #404040;
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+.timeline > li.is-lit::before {
+    background: #da5656;
+    border-color: #da5656;
+    box-shadow: 0 0 0 4px rgba(218, 86, 86, 0.18);
+}
+
+/* Interactive shell */
+.shell-out {
+    @apply h-72 overflow-y-auto px-5 py-4 font-mono text-[13px] leading-6 text-light-low;
+    scrollbar-width: thin;
+    scrollbar-color: #404040 transparent;
+}
+.shell-out .cmd {
+    @apply text-bright;
+}
+.shell-out .cmd span {
+    @apply text-red-low;
+}
+.shell-out .err {
+    @apply text-red-low;
+}
+.shell-out .ok {
+    @apply text-green;
+}
+.shell-out .dim {
+    @apply text-muted;
+}
+.shell-out a {
+    @apply text-bright underline decoration-red-low underline-offset-4 hover:text-red-low;
+}
+.shell-form {
+    @apply flex items-center gap-2 border-t border-line px-5 py-3 font-mono text-[13px];
+}
+.shell-form label {
+    @apply shrink-0 text-red-low;
+}
+.shell-form input {
+    @apply min-w-0 flex-1 bg-transparent text-bright caret-red-low placeholder:text-dark-low;
+    outline: none;
+}
+.shell-form:focus-within {
+    @apply bg-body/40;
+}
+.shell-chip {
+    @apply rounded border border-line px-2 py-0.5 font-mono text-[11px] text-light-low transition-colors hover:border-red-low hover:text-bright;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fx [data-reveal] {
+        opacity: 1;
+        transform: none;
+    }
+    .fx .section .eyebrow {
+        width: auto;
+        border-right: 0;
+    }
 }
