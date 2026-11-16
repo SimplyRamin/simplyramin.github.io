@@ -2,87 +2,225 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body{
+/* ---------- Base ---------- */
+html {
     scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
 }
-
-.left-50 {
-    left: 50%;
+body {
+    @apply bg-body text-soft font-sans antialiased;
 }
-.right-50 {
-    right: 50%;
-}
-.top-50 {
-    top: 50%;
-}
-
-.-z-1 {
-    z-index: -1;
-}
-
-.secondary-title {
-    @apply text-3xl font-bold;
-}
-.secondary-title::after {
-    content: "";
-    @apply block w-6 h-2 bg-red-high rounded-full mb-1;
-}
-.section-paragraph {
-    @apply text-light-low my-6 w-full max-w-xl;
+::selection {
+    @apply bg-red-high text-bright;
 }
 [id] {
-    scroll-margin-top: 100px;
+    scroll-margin-top: 5.5rem;
 }
-.left-percentage {
-    left: 5%;
-}
-.h-screen-partial{
-    height: 80vh;
-}
-.nav-dot {
-    transition: background 200ms, border-color 200ms;
-}
-.selected-circle {
-    @apply border-red-high bg-red-high;
-}
-.nav-dot:hover span {
-    opacity: 1;
-}
-/* Projects */
 [hidden] {
     display: none !important;
 }
-.project-title {
-    @apply text-bright text-lg sm:text-xl font-bold leading-snug truncate;
+:focus-visible {
+    outline: 2px solid #da5656;
+    outline-offset: 3px;
+    border-radius: 4px;
 }
-.project-title::after {
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* ---------- Layout ---------- */
+.wrap {
+    @apply mx-auto w-full max-w-page px-5 sm:px-8;
+}
+.section {
+    @apply border-t border-line py-20 sm:py-28;
+}
+.eyebrow {
+    @apply font-mono text-sm text-muted;
+}
+.eyebrow b {
+    @apply font-medium text-red-low;
+}
+.section-title {
+    @apply mt-3 font-mono text-3xl font-bold tracking-tight text-bright sm:text-4xl;
+}
+.lead {
+    @apply mt-4 max-w-2xl text-base leading-relaxed text-light-low sm:text-lg;
+}
+.skip-link {
+    @apply sr-only;
+}
+.skip-link:focus {
+    @apply not-sr-only fixed left-4 top-4 z-[60] rounded-md bg-red-high px-4 py-2 font-mono text-sm text-bright;
+}
+
+/* ---------- Header / nav ---------- */
+.site-header {
+    @apply fixed inset-x-0 top-0 z-50 border-b border-transparent transition-colors duration-300;
+}
+.site-header.is-scrolled {
+    @apply border-line bg-body/95 backdrop-blur-md;
+}
+.brand {
+    @apply font-mono text-sm font-medium text-bright sm:text-base;
+}
+.brand-host {
+    @apply text-red-low;
+}
+.nav-link {
+    @apply rounded font-mono text-sm text-muted transition-colors hover:text-bright;
+}
+.nav-link span {
+    @apply mr-1 text-light-high;
+}
+.nav-link[aria-current="true"] {
+    @apply text-bright;
+}
+.nav-link[aria-current="true"] span {
+    @apply text-red-low;
+}
+.mobile-menu {
+    @apply border-b border-line bg-body/95 backdrop-blur-md md:hidden;
+}
+.mobile-menu a {
+    @apply block border-t border-line px-5 py-4 font-mono text-base text-soft sm:px-8;
+}
+.mobile-menu a span {
+    @apply mr-2 text-red-low;
+}
+.cursor {
+    @apply ml-0.5 inline-block h-[1.05em] w-[0.55em] translate-y-[0.15em] bg-red-low;
+    animation: blink 1.1s steps(1) infinite;
+}
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* ---------- Hero ---------- */
+.hero {
+    @apply relative overflow-hidden pt-32 sm:pt-40;
+}
+.grid-bg {
+    @apply pointer-events-none absolute inset-0;
+    background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+    background-size: 44px 44px;
+    -webkit-mask-image: radial-gradient(ellipse 80% 70% at 35% 35%, #000 30%, transparent 75%);
+    mask-image: radial-gradient(ellipse 80% 70% at 35% 35%, #000 30%, transparent 75%);
+}
+.hero-name {
+    @apply mt-4 font-mono text-[2.6rem] font-bold leading-none tracking-tight text-bright sm:text-6xl lg:text-7xl;
+}
+.hero-role {
+    @apply mt-5 font-mono text-lg font-medium text-red-low sm:text-2xl;
+}
+.hero-tagline {
+    @apply mt-6 max-w-xl text-xl leading-snug text-bright sm:text-2xl;
+}
+.hero-sub {
+    @apply mt-4 max-w-xl text-base leading-relaxed text-light-low;
+}
+.portrait {
+    @apply relative mx-auto w-full max-w-[15rem] sm:max-w-sm lg:max-w-none;
+}
+.portrait::before {
     content: "";
-    @apply block w-full h-1 bg-red-high rounded-full mt-2;
+    @apply absolute inset-x-[8%] bottom-0 top-[18%] rounded-full bg-red-high/20 blur-3xl;
 }
+.portrait img {
+    @apply relative block h-auto w-full;
+    -webkit-mask-image: linear-gradient(to bottom, #000 72%, transparent 98%);
+    mask-image: linear-gradient(to bottom, #000 72%, transparent 98%);
+}
+.portrait-tag {
+    @apply absolute bottom-6 left-0 rounded border border-line bg-body/80 px-2.5 py-1 font-mono text-[11px] text-muted backdrop-blur-sm;
+}
+.portrait-tag b {
+    @apply font-medium text-green;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+    @apply inline-flex items-center gap-2 rounded-md px-4 py-2.5 font-mono text-sm font-medium transition-colors;
+}
+.btn-primary {
+    @apply bg-red-high text-bright hover:bg-red-low;
+}
+.btn-ghost {
+    @apply border border-dark-low text-soft hover:border-red-low hover:text-bright;
+}
+.icon-btn {
+    @apply grid h-10 w-10 place-items-center rounded-md border border-dark-low text-muted transition-colors hover:border-light-high hover:text-bright;
+}
+
+/* ---------- Terminal panel ---------- */
+.term {
+    @apply overflow-hidden rounded-lg border border-line bg-panel/90;
+}
+.term-bar {
+    @apply flex items-center gap-3 border-b border-line px-4 py-2.5 font-mono text-xs text-muted;
+}
+.term-dots {
+    @apply flex gap-1.5;
+}
+.term-dots i {
+    @apply block h-2.5 w-2.5 rounded-full bg-dark-low;
+}
+.metric {
+    @apply border-line p-4 sm:p-6;
+}
+.metric-key {
+    @apply font-mono text-xs text-red-low;
+}
+.metric-value {
+    @apply mt-2 font-mono text-2xl font-bold tracking-tight text-bright sm:text-4xl;
+}
+.metric-label {
+    @apply mt-2 text-xs leading-snug text-muted sm:text-sm;
+}
+
+/* ---------- Projects ---------- */
 .project-filter {
-    @apply rounded-full border-2 border-dark-low px-4 py-1.5 text-sm font-medium text-light-low transition-colors hover:border-red-low hover:text-bright focus:outline-none focus-visible:ring-2 focus-visible:ring-red-low focus-visible:ring-offset-2 focus-visible:ring-offset-body;
+    @apply rounded-md border border-dark-low px-3 py-1.5 font-mono text-xs text-light-low transition-colors hover:border-red-low hover:text-bright sm:text-sm;
 }
 .project-filter[aria-pressed="true"] {
     @apply border-red-high bg-red-high text-bright;
 }
 .project-filter-count {
-    @apply ml-1 text-xs opacity-80;
+    @apply ml-1 text-[0.7rem] opacity-70;
 }
 .project-card {
-    @apply flex h-full flex-col rounded-lg border-2 border-dark-low bg-dark-high/30 p-5 text-left transition-colors hover:border-red-high;
+    @apply flex h-full flex-col rounded-lg border border-line bg-panel p-5 text-left transition-colors hover:border-red-high;
 }
 /* keyboard focus inside a card highlights it like hover */
 .project-card:has(:focus-visible) {
     @apply border-red-high;
 }
+.project-title {
+    @apply truncate text-lg font-semibold leading-snug text-bright;
+}
+.project-title::after {
+    content: "";
+    @apply mt-3 block h-0.5 w-full rounded-full bg-red-high;
+}
+.project-card header p {
+    @apply font-mono text-xs text-muted;
+}
 .project-badge {
-    @apply shrink-0 rounded-full border px-2.5 py-0.5 text-xs font-bold uppercase tracking-wide;
+    @apply shrink-0 rounded border px-2 py-0.5 font-mono text-[11px] lowercase;
 }
 .project-tag {
-    @apply rounded-md bg-dark-high px-2 py-0.5 text-xs text-light-low;
+    @apply rounded bg-dark-high/70 px-2 py-0.5 font-mono text-[11px] text-light-low;
 }
 .project-desc {
-    @apply mt-3 text-sm leading-5 text-light-low;
+    @apply mt-4 text-sm leading-5 text-light-low;
 }
 /* 4 lines of text-sm / leading-5 */
 .project-desc.is-clamped {
@@ -94,28 +232,115 @@ html, body{
     mask-image: linear-gradient(to bottom, #000 55%, transparent);
 }
 .project-more {
-    @apply mt-2 self-start rounded text-sm font-bold text-red-low hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-red-low focus-visible:ring-offset-2 focus-visible:ring-offset-body;
+    @apply mt-2 self-start rounded font-mono text-xs font-medium text-red-low hover:underline;
+}
+.project-card a {
+    @apply font-mono;
 }
 
-::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+/* ---------- Experience ---------- */
+.group-label {
+    @apply mb-2 mt-14 font-mono text-xs uppercase tracking-[0.2em] text-light-high;
 }
-::-webkit-scrollbar-track {
-    border-radius: 10px;
-    background: #262626;
-    box-shadow: 0 0 1px 1px #111, inset 0 0 4px rgba(0, 0, 0, 0.3);
+.xp {
+    @apply grid gap-x-10 gap-y-3 border-t border-line py-8 md:grid-cols-[11rem_1fr];
 }
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background: linear-gradient(left, #3e3e3e, #111, #000);
-    box-shadow: inset 0 0 1px 1px #646464;
+.xp-date {
+    @apply font-mono text-sm text-muted;
+}
+.xp-now {
+    @apply mt-1 inline-flex items-center gap-1.5 font-mono text-xs text-green;
+}
+.xp-now::before {
+    content: "";
+    @apply h-1.5 w-1.5 rounded-full bg-green;
+    box-shadow: 0 0 0 3px rgba(41, 176, 103, 0.2);
+}
+.xp-role {
+    @apply text-xl font-semibold text-bright;
+}
+.xp-org {
+    @apply mt-1 font-mono text-sm text-red-low;
+}
+.xp-body {
+    @apply mt-4 max-w-3xl leading-relaxed text-light-low;
+}
+.xp-body strong {
+    @apply font-medium text-soft;
+}
+.ticks {
+    @apply mt-4 max-w-3xl space-y-2.5 leading-relaxed text-light-low;
+}
+.ticks li {
+    @apply relative pl-6;
+}
+.ticks li::before {
+    content: "▹";
+    @apply absolute left-0 top-0 font-mono text-red-low;
+}
+.ticks strong {
+    @apply font-medium text-soft;
 }
 
-.nav {
-    transition-duration: 1s;
+/* ---------- Stack ---------- */
+.stack-key {
+    @apply font-mono text-sm text-red-low;
+}
+.chip {
+    @apply rounded border border-line bg-body px-2.5 py-1 font-mono text-xs text-soft;
 }
 
-.side-nav{
-    width: 0px;
+/* ---------- Education & certifications ---------- */
+.edu {
+    @apply grid gap-x-10 gap-y-2 border-t border-line py-7 md:grid-cols-[11rem_1fr];
+}
+.edu-title {
+    @apply text-lg font-semibold text-bright;
+}
+.edu-school {
+    @apply mt-1 font-mono text-sm text-red-low;
+}
+.edu-notes {
+    @apply mt-3 space-y-1.5 text-sm leading-relaxed text-light-low;
+}
+.edu-notes b {
+    @apply font-mono text-xs font-normal text-muted;
+}
+.cert {
+    @apply border-t border-line;
+}
+.cert summary {
+    @apply grid cursor-pointer list-none grid-cols-[1fr_auto] items-center gap-x-4 gap-y-1 py-5 sm:grid-cols-[1fr_13rem_6rem_auto];
+}
+.cert summary::-webkit-details-marker {
+    display: none;
+}
+.cert-title {
+    @apply font-semibold text-bright;
+}
+.cert-meta {
+    @apply font-mono text-xs text-muted sm:text-sm;
+}
+.cert-chevron {
+    @apply row-span-2 font-mono text-red-low transition-transform sm:row-span-1;
+}
+.cert[open] .cert-chevron {
+    @apply rotate-90;
+}
+.cert-body {
+    @apply pb-6;
+}
+.cert-body li {
+    @apply flex items-baseline justify-between gap-4 border-t border-line/60 py-2.5 text-sm text-light-low;
+}
+.link {
+    @apply font-mono text-xs text-red-low underline-offset-4 hover:underline;
+}
+
+/* ---------- Contact / footer ---------- */
+.email {
+    @apply break-all font-mono text-2xl font-bold text-bright decoration-red-low decoration-2 underline-offset-8 hover:underline sm:text-4xl;
+}
+.site-footer {
+    @apply border-t border-line py-10 font-mono text-xs text-muted;
 }
