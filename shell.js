@@ -83,7 +83,7 @@
 			run() {
 				line('Ramin Ferdos: Senior AI Engineer.');
 				line('I build production AI systems, from agent orchestration to evaluation.');
-				line('Currently tech lead for AI & analytics products at Tabiat Makan Industrial Group.', 'dim');
+				line('Currently owning AI & analytics products end to end at Tabiat Makan Industrial Group.', 'dim');
 			},
 		},
 		ls: {
